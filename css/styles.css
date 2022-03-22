@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Orbitron&family=Quicksand:wght@300;400;500;600;700&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+* {
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+}
+
+h1, h2, h3{
+    font-family: 'Cinzel Decorative', cursive;
+    color: #210606;
+    text-align: center;
+    margin: .5em 0;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 6em;
+}
+
+    h1 span{
+        font-family: 'Cinzel Decorative', cursive;
+        color: #5d4037;
+    }
+h2{
+    font-size: 3em;
+    color: #210606;
+}
+
+header{
+    height: 70vh;
+}
+
+/* Navbar */
+.navColor{
+    background-color: rgba(64, 37, 37,.7);
+}
+
+    .nav-item a{
+        font-size: 1.5em;
+    }
+
+    .nav-item a:hover{
+        text-decoration: underline;
+    }
+
+.logo{
+    width: 20em;
+}
+
+.infoContainer{
+    align-items: center;
+    justify-content: center;
+}
+
+.impressionLight {
+    width: 98vw;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    justify-items: center;
+}
+
+.impressionDark {
+    width: 98vw;
+    align-items: center;
+    background-color:#5d4037;
+    justify-items: center;
+}
+
+    .container-fluid .paragraph{
+        font-size: 1.5em;
+        color: #402525;
+    }
+
+    .container-fluid img{
+        width: 100%;
+    }
+
+    .container-fluid figcaption{
+        color: #402525;
+        text-align: center;
+        text-decoration: overline;
+        font-style:italic;
+    }
+
+    div .icons{
+        width: 10em;
+        background: none;
+}
+
+    .impressionDark h2 {
+        color: #d7ccc8;
+    }
+
+        .impressionDark .container-fluid figcaption {
+            color: #d7ccc8;
+        }
+
+        .impressionDark .container-fluid .paragraph{
+            font-size: 1.5em;
+            color: #d7ccc8;
+        }
+
+/* Table */
+.price{
+    font-size: 2em;
+    color: #210606;
+    width:75vw;
+}
+
+/* Class */
+/* Grid */
+.grid {
+    display: grid;
+    width: 100%;
+}
+
+/* Availability Form */
+.availForm{
+    background: #402525;
+    color: #d7ccc8;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1em;
+}
+
+    .availForm label{
+        font-size: 1.5em;
+    }
+
+    .availForm input[type="date"], 
+    .availForm select{
+        box-sizing: border-box;
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: #402525;
+        outline: 0;
+        font-size: 1.5em;
+        color: #d7ccc8;
+        border-bottom: .1em solid #d7ccc8;
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+}
+
+    .availForm form button{
+        font-weight: 600;
+        background: #d7ccc8;
+        border: 0;
+        border-radius: .1em;
+        text-transform: uppercase;
+        color: #210606;
+        padding: 1.5em;
+        margin-top: 1em;
+    }
+
+select option:disabled{
+    color:#210606;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+    input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicator{
+    filter: drop-shadow(16px 16px 20px rgb(215, 204, 200)) invert(100%);
+}
+
+/* Section Styles*/
+
+/* contentDiv Reserve */
+.contentDivRes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: .5rem .5rem;
+    background-color: #f2f2f2;
+    box-shadow: rgba(38, 1, 1, 0.1) .5rem .25rem;
+}
+
+    .contentDivRes ul{
+        display:flex;
+
+    }
+
+    .contentDivRes figure img{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding: 1rem;
+        margin-bottom: .5rem;
+        width: 100%;
+        border-radius: 2rem 0;
+    }
+    .contentDivRes figure figcaption{
+        text-align: center;
+        padding-top: 0;
+        margin-top: 0;
+        text-decoration: overline;
+        font-size: 1rem;
+        color: #210606;
+        font-style: italic;
+        margin: 0 1rem 2rem 1rem;
+    }
+/* Ends contentDiv Reserve */
+
+/* Iconos de Servicios Hotel */
+.servicesTitle{
+    width: 100%;
+    text-align: center;
+    margin: 1rem 1rem 0 1rem;
+    box-sizing: border-box;
+}
+.services{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4rem;
+    color: #5d4037;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.servicesAlt{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4rem;
+    color:#943e1e;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.iconsHotelServ{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    width:100%;
+    box-sizing: border-box;
+    padding: .5rem 2rem;
+}
+
+    .iconsHotelServ figure{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+    }
+
+        .iconsHotelServ figure img{
+            display: flex;
+            width: 10rem;
+            box-sizing: border-box;
+        }
+
+        .iconsHotelServ figure figcaption{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
+            text-decoration: overline;
+        }
+
+/* Rooms & Reserve Buttons */
+.iconsButtonsContainer{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: .5 2rem;
+    box-sizing: border-box;
+}
+
+.icons{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    width:100%;
+    box-sizing: border-box;
+    padding: .5rem 2rem;
+}
+
+    .icons figure{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+    }
+
+        .icons figure figcaption{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
+            text-decoration: overline;
+            text-align: center;
+        }
+
+        .icons figure img{
+            display: flex;
+            width: 10rem;
+            box-sizing: border-box;
+        }
+
+.bedroomIcons{
+display: flex;
+flex-flow: row wrap;
+width: 5rem; 
+box-sizing: border-box;
+}
+/* Buttons & Buttons Reserve  */
+.gridCenterFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.buttons{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    align-items: center;
+    justify-items: space-between;
+    box-sizing: border-box;
+}
+
+.buttonsCol{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    align-items: center;
+    justify-items: space-between;
+    box-sizing: border-box;
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:6rem;
+    background:#210606;
+    color:#f2f2f2;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: .2em;
+    margin:0 .5em;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.button span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.button:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #5d4037;
+    position: absolute;
+    z-index: 1;
+    top: -6em;
+    left: 0;
+    transition: .3s ease-in-out all;
+    box-sizing: border-box;
+}
+
+.button:hover:after{
+    top:0;
+}
+
+.reserve{
+    background:#d7ccc8;
+    color:#210606;
+}
+
+.reserve:after{
+    background-color: #e8d0b3;
+}
+
+/* Reserve Form Styles */
+.anounce{
+    font-size: 2em;
+    text-align: center;
+    margin: 1em 0;
+    color: #5d4037;
+}
+
+.reserveForm{
+    background: #402525;
+    color: #d7ccc8;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    margin: 0;
+}
+
+.backBrown{
+    background-color: #402525;
+}
+
+.legend{
+    font-size: 1.5em;
+    color: #d7ccc8;
+    text-decoration: none;
+}
+
+    .legend a{
+        text-decoration: none;
+        color: #e8d0b3;
+    }
+
+    .reserveForm div{
+        margin: 0;
+        padding: 1em 0;
+    }
+
+    .reserveForm label{
+        font-size: 1.5em;
+    }
+
+    .reserveForm select, 
+    .reserveForm input{
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: #402525;
+        outline: 0;
+        font-size: 1.5em;
+        color: #d7ccc8;
+        border-bottom: .1em solid #d7ccc8;
+    }
+
+    .cvc img{
+    width: 16em;
+    }
+
+        .reserveForm div{
+            display: grid;
+            width: 100%;
+            align-items: center;
+        }
+
+.reserveForm select option:disabled{
+    color:#d7ccc8;
+}
+
+/* Aside Styles */
+
+.interest{
+    width: 100%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+aside{
+    background: #e8d0b3;
+    display: grid;
+    width:100%; 
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.asideTitle{
+    font-size: 4em;
+    color: #210606;
+    text-align: center;
+}
+
+.asideFigCap{
+    font-size: 2em;
+    color: #210606;
+}
+
+.asideIcon{
+    width: 6em;
+    box-sizing: border-box;
+}
+
+.asideIconTur{
+    width: 11em;
+    box-sizing: border-box;
+}
+/* Ends Aside Styles */
+
+/* Footer Styles */
+.footerFlex{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+    background-color: #5d4037;
+    box-sizing: border-box;
+}
+    .footerFlex a{
+        display: inline-block;
+    }
+
+    .footerFlex .pDiv{
+        display: flex;
+        justify-content: end;
+        align-items: center; 
+        margin-right: 1em;
+    }
+    .footerFlex div p{
+        font-size: 1.5rem;
+        color: #d7ccc8;
+    }
+.iconDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+.iconFooter{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em .5em 0 0;
+    width: 4em;
+    box-sizing: border-box;
+    align-items: center;
+}
+    
+/* Contacto.html */
+
+.formContact{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+}
+
+.contactWrapper{
+    box-shadow: 0 0 2em 0 rgba(215, 204, 200,.3);
+}
+
+.contactWrapper > *{
+    padding: 1em;
+}
+
+.contactForm{
+    background:#d7ccc8;
+    color: #402525;
+}
+
+    .contactForm form{
+        margin: 0;
+        padding: 1em;
+        justify-content: center;
+    }
+
+        .contactForm form input[type="text"], 
+        .contactForm form input[type="email"],
+        .contactForm form input[type="phone"],
+        .contactForm form textarea{
+            box-sizing: border-box;
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: #d7ccc8;
+            outline: 0;
+            font-size: 1.5em;
+            color: #402525;
+            border-bottom: .1em solid #402525;
+        }
+        .contactForm form label{
+            font-size: 1.5em;
+            color: #402525;
+        }
+
+.contactInfo{
+    background-color: #402525;
+    color: #d7ccc8;
+    font-size: 1.5em;
+}
+
+.contactInfo .anounceLightCenter{
+    font-size: 2em;
+    color: #d7ccc8;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contactWrapper li{
+    list-style: none;
+}
+
+        .contactWrapper li img{
+            width:2em;
+        }
