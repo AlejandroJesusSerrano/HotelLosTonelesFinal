@@ -20,7 +20,6 @@ h1, h2, h3{
     color: #210606;
     text-align: center;
     margin: .5em 0;
-    text-transform: uppercase;
 }
 h1{
     font-size: 6em;
@@ -483,17 +482,45 @@ box-sizing: border-box;
     text-align: center;
 }
 
-aside{
+.asideGrid{
     background: #e8d0b3;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'asideTitle asideTitle asideTitle'
+    'trip booking turismo';
     width:100%; 
     padding: 2em;
     box-sizing: border-box;
 }
 
+#asideTitle{
+    grid-area: asideTitle;
+}
+#trip{
+    grid-area: trip;
+}
+#booking{
+    grid-area: booking;
+}
+#cafayate{
+    grid-area: turismo;
+}
+
+    .asideGrid h3{
+        align-items: center;
+        
+}
+
 .asideTitle{
     font-size: 4em;
     color: #210606;
+    text-align: center;
+}
+
+.asideFigures{
+    grid-template-columns: 1;
+    grid-template-rows: 2;
     text-align: center;
 }
 
