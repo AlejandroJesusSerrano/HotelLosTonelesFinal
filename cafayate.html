@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HOTEL LOS TONELES - CAFAYATE</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navColor w-100">
+        <div class="navContainer container-fluid">
+            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo Hotel Los Toneles"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservascon.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">Instalaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cafayate.html">Descubre Cafayate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Ends Navbar -->
+    <!-- Main Contet -->
+    <main>
+        <!-- Carousel -->
+        <div id="carousel" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/entrada-del-hotel.jpg" class="d-block w-100" alt="IMagen Frente del Hotel Los Toneles - Cafayate">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/desayuno.jpg" class="d-block w-100" alt="Desayuno Hotel Los Toneles - Cafayate">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/pileta2.jpg" class="d-block w-100" alt="Pileta Hotel Los Toneles - Cafayate">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Ends Carousel -->    
+        <!-- Availability Form -->
+        <div class="availForm py-2">
+            <!-- se muestra la etiqueta como form acción a los fines de simular funcionamiento -->
+            <form action="reservascon.html">
+                <!-- Form Content -->  
+                <div class="container w-100">
+                    <div class="row">
+                        <div class="dateInput col-xs-12 col-xl-4">
+                            <label for="date" class="dateLbl">Ingreso: </label>
+                            <input type="date" name="date" id="date" class="indexDateInput">
+                        </div>
+                        <div class="col-xs-12 col-xl-4">
+                            <label for="night" class="dateLbl">Noches: </label>
+                            <select name="night" id="night"> 
+                                <option selected disabled>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-xl-4">
+                            <label for="room" class="dateLbl">Habitación: </label>
+                            <select name="room" id="room"> 
+                                <option selected disabled>0</option>
+                                <option value="superior">Superior</option>
+                                <option value="standard">Estándard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-xs-12">
+                            <label for="adult" class="dateLbl">Adultos: </label>
+                            <select name="adult" id="adult">
+                                <option selected disabled>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-4 col-xs-12">
+                            <label for="kid" class="dateLbl">Niños: </label>
+                            <select name="kid" id="kid">
+                                <option selected disabled>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select> 
+                        </div>
+                        <!-- la función del boton sera, segun haya o no disponibilidad, llevar al usuario a una opcion en la que pueda reservar o a otra en la que informe que no hay reservas para la fewcha seleccionada y que modifique su decisión -->
+                        <div class="m-0 p-0 col-xl-4 col-xs-12 btn ">
+                            <button type="submit" class="button reserve">
+                                <span>¡Verifica la Disponibilidad!</span>
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+            </form>
+        </div>
+        <!-- Ends Availability Form -->
+        <!--Section Data  -->
+        <section class="py-3">
+            <!-- Contaioner -->
+            <div class="container-fluid">
+                <!-- Title -->
+                <h1>Relájate y <span>Disfruta</span></h1>
+                <!-- Ends Title -->
+                <div class="container-fluid row infoContainer">
+                    <!-- First Sub-Section --> 
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight">
+                        <h2 class="pt-1 mt-1" >Nuestros Servicios</h2>
+                        <div class="container-fluid col-md-3 col-lg-4">
+                            <figure>
+                                <img src="img/patio cervecero.jpg" alt="Patio Cervecero Hotel Los Toneles">
+                                <figcaption class="pt-1">Patio Cerevecero - Hotel Los Toneles Cafayate</figcaption>
+                            </figure>
+                        </div>
+                        <div class="container-fluid col-md-3 col-lg-4">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus eius accusantium possimus, totam praesentium quo sed veritatis deleniti ab commodi! Doloremque tempore minima autem aut blanditiis quis, provident labore?
+                            </p>
+                        </div>
+                        <div class="container-fluid row col-md-6 col-lg-4">
+                            <img src="icons/beeryardicon.svg" alt="Patio Cervecero" class="icons">
+                            <img src="icons/gymicon.svg" alt="Gimnasio" class="icons">
+                            <img src="icons/poolicon.svg" alt="Pileta" class="icons">
+                            <img src="icons/playgroundicon.svg" alt="Patio de Juegos" class="icons">
+                            <img src="icons/parkingicon.svg" alt="Estacionamiento" class="icons">
+                            <img src="icons/wifiIcon.svg" alt="Wi-fi" class="icons">
+                            <img src="icons/breakfasticon.svg" alt="Desayuno" class="icons">
+                            <img src="icons/grillicon.svg" alt="Parrilla" class="icons">
+                        </div>
+                    </div>
+                    <!-- Ends First Sub-Section -->
+                    <!-- Second Sub-Section Superior Room -->
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark">
+                        <h2 class="pt-1 mt-1">Habitación Superior</h2>
+                        <div class="container-fluid col-md-3 col-lg-4">
+                            <figure>
+                                <img src="img/habitacionsup.jpg" alt="Habitación Superior Hotel Los Toneles - Cafayate">
+                                <figcaption class="pt-1">Habitación Superior - Hotel Los Toneles Cafayate</figcaption>
+                            </figure>
+                        </div>
+                        <div class="container-fluid col-md-3 col-lg-4">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus eius accusantium possimus, totam praesentium quo sed veritatis deleniti ab commodi! Doloremque tempore minima autem aut blanditiis quis, provident labore?
+                            </p>
+                        </div>
+                        <div class="container-fluid row col-md-6 col-lg-4">
+                            <img src="icons/tviconLIght.svg" alt="T.V. por Cable" class="icons">
+                            <img src="icons/airiconLight.svg" alt="Aie Acondicionado"  class="icons">
+                            <img src="icons/safeiconLight.svg" alt="Caja de Seguridad" class="icons">
+                            <img src="icons/tableiconLight.svg" alt="Mesa en el cuarto"  class="icons">
+                            <img src="icons/chairiconLight.svg" alt="Sillas en el cuarto" class="icons">
+                            <img src="icons/showericonLIght.svg" alt="Ducha de Agua Caliente y Fria - Privada" class="icons">
+                            <img src="icons/toileticonLIght.svg" alt="Baño Privado" class="icons">
+                            <div class="gridCenterFlex">
+                                <!-- Container Buttons -->
+                                <div class="buttons">
+                                    <!-- Se utilizan botones por que se espera una accion sumado al enlace -->
+                                    <form action="#availForm">
+                                        <button class="button reserve">
+                                            <span>Reserva</span>
+                                        </button>
+                                    </form>
+                                    <form action="Instalaciones.html">
+                                        <button class="button">
+                                            <span>Habitación</span>
+                                        </button>
+                                    </form>
+                                <!-- finaliza sector abarcad por comentario previo -->
+                                </div>
+                            <!-- End Container Buttons -->
+                            </div>
+                            <!-- Ends Div center-->
+                        </div>
+                    </div>
+                    <!-- Ends Second Subsection -->
+                    <!-- Third Sub-section Standar Room -->
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight">
+                        <h2 class="pt-1 mt-1">Habitación Estándard</h2>
+                        <div class="container-fluid col-md-3 col-lg-4">
+                            <figure>
+                                <img src="img/habitacionsta.jpg" alt="Patio Cervecero Hotel Los Toneles">
+                                <figcaption class="pt-1">Habitación Estándard - Hotel Los Toneles Cafayate</figcaption>
+                            </figure>
+                        </div>
+                        <div class="container-fluid col-md-3 col-lg-4">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus eius accusantium possimus, totam praesentium quo sed veritatis deleniti ab commodi! Doloremque tempore minima autem aut blanditiis quis, provident labore?
+                            </p>
+                        </div>
+                        <div class="container-fluid row col-md-6 col-lg-4">
+                            <img src="icons/tvicon.svg" alt="T.V. por Cable" class="icons">
+                            <img src="icons/airicon.svg" alt="Aie Acondicionado"  class="icons">
+                            <img src="icons/showericon.svg" alt="Ducha de Agua Caliente y Fria - Privada" class="icons">
+                            <img src="icons/toileticon.svg" alt="Baño Privado" class="icons">
+                            <div class="gridCenterFlex">
+                                <!-- Container Buttons -->
+                                <div class="buttons">
+                                    <!-- Se utilizan botones por que se espera una accion sumado al enlace -->
+                                    <form action="#availForm">
+                                        <button class="button reserve">
+                                            <span>Reserva</span>
+                                        </button>
+                                    </form>
+                                    <form action="Instalaciones.html">
+                                        <button class="button">
+                                            <span>Habitación</span>
+                                        </button>
+                                    </form>
+                                <!-- finaliza sector abarcad por comentario previo -->
+                                </div>
+                            <!-- End Container Buttons -->
+                            </div>
+                            <!-- Ends Div center-->
+                        </div>
+                    </div>
+                    <!-- Ends Third Sub-section -->
+
+                </div>
+            </div>
+            <!-- Ends Container -->
+        </section>
+        <!-- Ends Secrtion Data -->
+        <!-- Ends Info -->
+    </main>
+<!-- Aside -->
+<aside id="interest">
+    <div class="asideGrid">
+            <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
+        <div id="trip" class="asideFigures">
+            <figure>
+                <a href="https://www.tripadvisor.com.ar/Hotel_Review-g317027-d3200726-Reviews-Los_Toneles-Cafayate_Province_of_Salta_Northern_Argentina.html" target="blank"><img src="icons/tripicon.svg" alt="Ícono y enláce a Trip Advisor" class="asideIcon"></a>
+                <figcaption class="asideFigCap">Trip Advisor</figcaption>
+            </figure>
+        </div>
+        <div id="booking" class="asideFigures">
+                <a href="https://www.booking.com/hotel/ar/cafayate-los-toneles.es.html" target="blank"><img src="icons/booking.svg" alt="Ícono y enláce a Booking" class="asideIcon"></a>
+                <figcaption class="asideFigCap">Booking</figcaption>
+            </figure>
+        </div>
+        <div class="asideFigures" id="cafayate">
+            <figure>
+                <a href="https://www.facebook.com/SECTURCAFAYATE/" target="blank"><img src="icons/turismocafayate.svg" alt="Imagen: Turismo Cafayate" class="asideIconTur"></a>
+                <figcaption class="asideFigCap">Actividades</figcaption>
+            </figure>
+        </div>
+    </div>
+</aside>
+<!-- End Aside -->
+<!-- Footer -->
+<footer id="footer">
+    <div class="footerFlex">
+        <div class="pDiv">
+            <p>Seguinos en nuestras redes sociales:</p>
+        </div>
+        <div class="iconDiv">
+            <a href="https://www.facebook.com/" target="blank"><img src="icons/facebookLight.svg" alt="Facebook" class="iconFooter"</a>
+            <a href="https://www.instagram.com/" target="blank"><img src="icons/instagramLIght.svg" alt="Instagram" class="iconFooter"></a>
+            <a href="https://twitter.com/" target="blank"><img src="icons/twitterLight.svg" alt="Twitter"class="iconFooter"></a>
+        </div>  
+    </div>
+</footer>
+<!-- End Footer -->
+<!-- Scrtipt js bootsrap -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
