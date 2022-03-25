@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Orbitron&family=Quicksand:wght@300;400;500;600;700&family=Vesper+Libre:wght@400;500;700;900&display=swap");
+.navColor {
+  background-color: rgba(64, 37, 37, 0.7);
+  padding: 5px 30px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navColor ul {
+    display: flex; }
+    .navColor ul li {
+      list-style: none; }
+      .navColor ul li a {
+        color: #d7ccc8;
+        font-size: 1.5em;
+        text-decoration: none; }
+        .navColor ul li a:hover {
+          color: #f2f2f2;
+          text-decoration: underline; }
+
+.logo {
+  width: 20em; }
+
+.infoContainer {
+  align-items: center;
+  justify-content: center; }
+
+.impressionLight {
+  width: 98vw;
+  align-items: center;
+  background-color: #f2f2f2;
+  justify-items: center; }
+
+.impressionDark {
+  width: 98vw;
+  align-items: center;
+  background-color: #5d4037;
+  justify-items: center; }
+
+.container-fluid .paragraph {
+  font-size: 1.5em;
+  color: #402525; }
+
+.container-fluid img {
+  width: 100%; }
+
+.container-fluid figcaption {
+  color: #402525;
+  text-align: center;
+  text-decoration: overline;
+  font-style: italic; }
+
+div .icons {
+  width: 10em;
+  background: none; }
+
+.impressionDark h2 {
+  color: #d7ccc8; }
+
+.impressionDark .container-fluid figcaption {
+  color: #d7ccc8; }
+
+.impressionDark .container-fluid .paragraph {
+  font-size: 1.5em;
+  color: #d7ccc8; }

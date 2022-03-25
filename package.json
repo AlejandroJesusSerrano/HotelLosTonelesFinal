@@ -1,0 +1,28 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "website hotel los toneles",
+  "main": "index.js",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroJesusSerrano/HotelLosTonelesFinal.git"
+  },
+  "author": "alejandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroJesusSerrano/HotelLosTonelesFinal/issues"
+  },
+  "homepage": "https://github.com/AlejandroJesusSerrano/HotelLosTonelesFinal#readme"
+}

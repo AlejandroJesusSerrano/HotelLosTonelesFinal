@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Orbitron&family=Quicksand:wght@300;400;500;600;700&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+
 * {
     font-weight: 500;
     padding: 0;
@@ -27,11 +28,11 @@ h1{
 
     h1 span{
         font-family: 'Cinzel Decorative', cursive;
-        color: #5d4037;
+        color: rgb(93, 64, 55);
     }
 h2{
     font-size: 3em;
-    color: #210606;
+    color: rgb(33, 6, 6);
 }
 
 header{
@@ -70,13 +71,13 @@ header{
 .impressionDark {
     width: 98vw;
     align-items: center;
-    background-color:#5d4037;
+    background-color:rgb(93, 64, 55);
     justify-items: center;
 }
 
     .container-fluid .paragraph{
         font-size: 1.5em;
-        color: #402525;
+        color: rgb(64, 37, 37);
     }
 
     .container-fluid img{
@@ -96,7 +97,7 @@ header{
 }
 
     .impressionDark h2 {
-        color: #d7ccc8;
+        color: rgb(215, 204, 200);
     }
 
         .impressionDark .container-fluid figcaption {
