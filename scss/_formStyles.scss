@@ -1,0 +1,184 @@
+// Availability 
+.availForm{
+    background: $secondaryColor;
+    color: $mainLightColor;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1em;
+    label{
+        font-size: $textNl;
+    }
+}
+
+    
+
+    .availForm input[type="date"], 
+    .availForm select{
+        box-sizing: border-box;
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: $secondaryColor;
+        outline: 0;
+        font-size: 1.5em;
+        color: $mainLightColor;
+        border-bottom: .1em solid $mainLightColor;
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+}
+
+    .availForm form button{
+        font-weight: 600;
+        background: $mainLightColor;
+        border: 0;
+        border-radius: .1em;
+        text-transform: uppercase;
+        color: $mainColor;
+        padding: 1.5em;
+        margin-top: 1em;
+    }
+
+select option:disabled{
+    color:$mainColor;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+    input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicator{
+    filter: drop-shadow(16px 16px 20px $mainLightColor) invert(100%);
+}
+
+//Reserve Form
+.anounce{
+    font-size: 2em;
+    text-align: center;
+    margin: 1em 0;
+    color: $decoColor;
+}
+
+.reserveForm{
+    background: $secondaryColor;
+    color: $mainLightColor;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    margin: 0;
+    
+    div{
+        margin: 0;
+        padding: 1em 0;
+        display: grid;
+        width: 100%;
+        align-items: center;
+    }
+
+    label{
+        font-size: 1.5em;
+    }
+
+    select, 
+    input{
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: $secondaryColor;
+        outline: 0;
+        font-size: 1.5em;
+        color: $mainLightColor;
+        border-bottom: .1em solid $mainLightColor;
+    }
+    
+    select option:disabled{
+        color:$mainLightColor;
+    }
+}
+
+.backBrown{
+    background-color: #402525;
+}
+
+.legend{
+    font-size: 1.5em;
+    color: #d7ccc8;
+    text-decoration: none;
+
+    a{
+        text-decoration: none;
+        color: #e8d0b3;
+    }
+}
+
+    
+
+    .cvc img{
+    width: 16em;
+    }
+
+//Contact Form
+
+.contactForm{
+    @extend .availForm;
+    
+    div{
+        background-color:$secondaryColor;
+        color: $mainLightColor;
+        border-color: $mainLightColor;
+
+        label{
+            font-size: 2em;
+            color: $mainLightColor;
+        }
+
+        input[Type="text"],
+        input[Type="tel"],
+        input[Type="email"],
+        textarea{
+            box-sizing: border-box;
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: $secondaryColor;
+            outline: 0;
+            font-size: 1.5em;
+            color:$mainLightColor;
+            border-bottom: .1em solid
+        }
+
+    }
+}
+
+.contactInfo{
+    background-color: $mainLightColor;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+    h4{
+        @extend .cardTitle;
+    }
+    
+    img{
+        width: 6em;
+    }
+
+    p{
+        font-family: $fontMain;
+        font-size: 2em;
+        color:$mainColor;
+    }
+
+    .iframe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

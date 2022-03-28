@@ -1,0 +1,78 @@
+.title{
+    font-family:$fontTitle;
+    font-size:$textXL;
+    color:$mainColor;
+    text-align:center;
+
+    span{
+        font-family:$fontTitle;
+        color:$decoColor;
+    }
+}
+
+.infoContainer{
+    align-items: center;
+    justify-content: center;
+}
+
+.impressionLight {
+    width: 98vw;
+    align-items: center;
+    background-color:$secondaryLightColor;
+    justify-items: center;
+}
+
+.impressionDark {
+    width: 98vw;
+    align-items: center;
+    background-color:$decoColor;
+    justify-items: center;
+}
+
+    .container-fluid .paragraph{
+        font-size: 2em;
+        color: $secondaryColor;
+    }
+
+    .container-fluid img{
+        width: 100%;
+    }
+
+    .container-fluid figcaption{
+        color: $secondaryColor;
+        text-align: center;
+        text-decoration: overline;
+        font-style:italic;
+    }
+
+    div .icons{
+        width: 10em;
+        background: none;
+}
+
+    .impressionDark h2 {
+        color: $mainLightColor;
+    }
+
+        .impressionDark .container-fluid figcaption {
+            color: $mainColor;
+        }
+
+        .impressionDark .container-fluid .paragraph{
+            font-size: 2em;
+            color: $mainLightColor;
+        }
+
+.cardTitle{
+    @extend .title;
+    font-size:$textLg;
+}
+
+.cardTitleLight{
+    @extend .cardTitle;
+    color:$mainLightColor;
+    
+    span{
+        color: $secondaryLightColor;
+    }
+}

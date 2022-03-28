@@ -1,0 +1,56 @@
+//Aside Styles 
+
+aside{
+    width: 100%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    text-align: center;
+    .asideGrid{
+        background: #e8d0b3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 'asideTitle asideTitle asideTitle'
+        'trip booking turismo';
+        width:100%; 
+        padding: 2em;
+        align-items:center;
+        #asideTitle{
+            grid-area: asideTitle;
+            font-family: $fontTitle;
+            font-size: $texth3;
+            color: $mainColor;
+            text-align: center;
+        }
+        #trip{
+            grid-area: trip;
+        }
+        #booking{
+            grid-area: booking;
+        }
+        #cafayate{
+            grid-area: turismo;
+        }
+    }
+}
+
+.asideFigures{
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    text-align: center;
+}
+
+.asideFigCap{
+    font-size: 2em;
+    color: #210606;
+}
+
+.asideIcon{
+    width: 6em;
+    box-sizing: border-box;
+}
+
+.asideIconTur{
+    width: 11em;
+    box-sizing: border-box;
+}

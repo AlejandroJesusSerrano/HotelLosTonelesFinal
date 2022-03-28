@@ -1,13 +1,14 @@
 // variables
 
 //colores
-$mainColor:rgb(33, 6, 6); 
-$mainLightColor:rgb(215,204,200);
-$secondaryColor:rgb(64, 37, 37);
-$secondaryLightColor:rgb(242, 242, 242);
-$decoColor:rgb(93, 64, 55);
-$navBarColor:rgba(64, 37, 37, .7);
-$fontColorDark:rgb(33, 6, 6);
+$mainColor:#210606; 
+$mainLightColor:#d7ccc8;
+$secondaryColor:#402525;
+$secondaryLightColor:#f2f2f2;
+$decoColor:#5d4037;
+$navBarColor:rgba(64, 37, 37,.7);
+$btnAnimateColor:#e8d0b3;
+
 
 //sizing
 $w100:100vw;
@@ -18,3 +19,7 @@ $w50:50vw;
 $h50:50vh;
 $w25:25vw;
 $h25:25vh;
+
+body{
+    background-image:url(../img/background.jpg)
+}

@@ -3,9 +3,15 @@
     padding: 5px 30px;
     position:sticky;
     top:0;
+    z-index:2;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    .logo{
+        width: 30em;
+    }
+    
     ul{
         display: flex;
 
@@ -13,8 +19,7 @@
             list-style: none;
             
             a{
-                color: $mainLightColor;
-                font-size: $textNl;
+                font-size: $textNav;
                 text-decoration: none;
                 &:hover{
                     color: $secondaryLightColor;
@@ -24,62 +29,3 @@
         }
     }
 }
-
-    
-
-.logo{
-    width: 20em;
-}
-
-.infoContainer{
-    align-items: center;
-    justify-content: center;
-}
-
-.impressionLight {
-    width: 98vw;
-    align-items: center;
-    background-color: rgb(242, 242, 242);
-    justify-items: center;
-}
-
-.impressionDark {
-    width: 98vw;
-    align-items: center;
-    background-color:rgb(93, 64, 55);
-    justify-items: center;
-}
-
-    .container-fluid .paragraph{
-        font-size: 1.5em;
-        color: rgb(64, 37, 37);
-    }
-
-    .container-fluid img{
-        width: 100%;
-    }
-
-    .container-fluid figcaption{
-        color: #402525;
-        text-align: center;
-        text-decoration: overline;
-        font-style:italic;
-    }
-
-    div .icons{
-        width: 10em;
-        background: none;
-}
-
-    .impressionDark h2 {
-        color: rgb(215, 204, 200);
-    }
-
-        .impressionDark .container-fluid figcaption {
-            color: #d7ccc8;
-        }
-
-        .impressionDark .container-fluid .paragraph{
-            font-size: 1.5em;
-            color: #d7ccc8;
-        }

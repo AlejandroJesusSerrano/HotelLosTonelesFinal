@@ -1,0 +1,46 @@
+.footerFlex{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    background-color: $decoColor;
+    box-sizing: border-box;
+    
+    .pDiv{
+        display: flex;
+        justify-content: end;
+        align-items: center; 
+        margin-right: 1em;
+        
+        p{
+            font-size: $textNav;
+            color: $mainLightColor;
+            margin-top:1em;
+        }
+        
+        .iconDiv{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        
+    }
+}
+
+.footerIcon{
+    display: inline-block;
+
+    .iconFooter{
+        display: inline-block;
+        text-decoration: none;
+        padding: 1em .5em 0 0;
+        width: 6em;
+        box-sizing: border-box;
+        align-items: center;
+    }
+}
+
+
+    
+
+    

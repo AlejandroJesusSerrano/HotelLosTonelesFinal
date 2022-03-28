@@ -1,147 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Los Toneles Hotel de Cafayate - Contact Form</title>
-        <link rel="icon" type="favicon" href="icons/favicon.png">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <!-- Grid Container -->
-        <div id="gridHotelContainer" class="grid">
-            <!-- Div Container Header + Navbar -->
-            <div id="headerNav" class="flexContainerHeader">
-                <header class="container">               
-                    <nav class="nav">
-                        <div class="navContainerNoBack">
-                            <div class="navLogo">
-                                <a href="index.html"><img src="img/logo.svg" alt="Logo Hotel Los Toneles"></a>
-                            </div>
-                            <label for="menu" class="navLabelNoBack">
-                                <img src="icons/menuIcon.svg" alt="Menu Inicio" class="navImg">
-                            </label>
-                            <input type="checkbox" id="menu" class="navInputNoBack">
-                            <div class="navMenuNoBack">
-                                <a href="index.html" class="navItemNoBack">Home</a>
-                                <a href="reservas.html" class="navItemNoBack">Reservas</a>
-                                <a href="habitaciones.html" class="navItemNoBack">Habitaciones</a>
-                                <a href="lugares.html" class="navItemNoBack">Conoce Cafayate</a>
-                                <a href="galeria.html" class="navItemNoBack">Galería de Imágenes</a>
-                                <a href="contacto.html" class="navItemNoBack">Contáctanos</a>
-                                <a href="nosotros.html" class="navItemNoBack">Acerca de Nosotros</a>
-                            </div>
-                        </div>
-                    </nav>
-                </header>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>HOTEL LOS TONELES - CAFAYATE</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navColor w-100">
+        <div class="navContainer container-fluid">
+            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo Hotel Los Toneles"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="reservascon.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">Instalaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cafayate.html">Descubre Cafayate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <!-- Ends Navbar -->
-            <!-- Main -->
-            <main>
-                <div class="formContact">
-                    
-                    <h1 class="titleSection secTitle">CONTACTENOS</h1>
-                    <article>
-                        <p class="anounce">
-                            <strong>
-                                Por favor, complete el formulario y le responderemos a la brevedad
-                            </strong>
-                        </p>
-                    </article>
-                    <div class="contactWrapper">
-                        <div class="contactForm">
-                            <form action="#" method="post">
-                                <p class="name">
-                                    <label for="nombre"class="formLabel">Nombre y Apellido</label>
-                                    <input type="text" placeholder="Coloca aquí tus Datos" name="nombre" id="nombre">
-                                </p>
-                                <p class="mail">
-                                    <label for="email"class="formLabel">E-Mail</label>
-                                    <input type="email" name="email" id="email">
-                                </p>
-                                <p class="phoneNumber">
-                                    <label for="phone">Número de Telefono</label>
-                                    <input type="phone" name="phone" id="phone">
-                                </p>
-                                <p class="checkBoxs">
-                                    <legend>¿Que deseas consultar?</legend>
-                                    <label for="habitacion"class="formLabel">Habitación</label>
-                                    <input type="checkbox" name="habitacion" id="habitacion">    
-                                    <label for="desayuno"class="formLabel">Eventos</label>
-                                    <input type="checkbox" name="eventos" id="eventos">
-                                    <label for="reserva"class="formLabel">Reservas</label>
-                                    <input type="checkbox" name="reserva" id="reserva">
-                                </p>
-                                <p class="textArea">
-                                    <legend>Por favor, detallanos tu consulta</legend>
-                                    <textarea placeholder="Escribe aquí tus dudas o consultas" name="consulta" id="consulta" cols="140" rows="15"></textarea>
-                                </p>
-                                <p class="btnContact">
-                                    <button type="submit" class="button">
-                                        <span>Enviar</span>
-                                    </button>
-                                </p>
-                            </form>
-                        </div>
-                        <div class="contactInfo">
-                            <h4 class="anounceLightCenter">Mas Información</h4>
-                            <ul>
-                                <li><img src="icons/whatsapp.svg" alt="whatsapp">
-                                    <p class="listAtentionDark">+549-387-************</p>
-                                </li>
-                                <li>
-                                    <img src="icons/positionIcon.svg" alt="Dirección">
-                                    <p class="listAtentionDark">Camila Quintana de Niño N° 38</p>
-                                    <p class="listAtentionDark">Cafayate, Salta, Argentina</p>
-                                </li>
-                                <li>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633.5334923768339!2d-65.97548521755444!3d-26.072575323912258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941f316b35cd231d%3A0x391cca1112b1f48a!2sLos%20Toneles!5e0!3m2!1ses-419!2sar!4v1644368953730!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                </li>
-                            </ul>
-                        </div>  
-                    </div>
-                </div> 
-            </main>
-            <!-- Ends Main -->
-            <!-- Aside -->
-            <aside id="interest">
-                <div class="asideGrid">
-                        <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
-                    <div id="trip" class="asideFigures">
-                        <figure>
-                            <a href="https://www.tripadvisor.com.ar/Hotel_Review-g317027-d3200726-Reviews-Los_Toneles-Cafayate_Province_of_Salta_Northern_Argentina.html" target="blank"><img src="icons/tripicon.svg" alt="Ícono y enláce a Trip Advisor" class="asideIcon"></a>
-                            <figcaption class="asideFigCap">Trip Advisor</figcaption>
-                        </figure>
-                    </div>
-                    <div id="booking" class="asideFigures">
-                            <a href="https://www.booking.com/hotel/ar/cafayate-los-toneles.es.html" target="blank"><img src="icons/booking.svg" alt="Ícono y enláce a Booking" class="asideIcon"></a>
-                            <figcaption class="asideFigCap">Booking</figcaption>
-                        </figure>
-                    </div>
-                    <div class="asideFigures" id="cafayate">
-                        <figure>
-                            <a href="https://www.facebook.com/SECTURCAFAYATE/" target="blank"><img src="icons/turismocafayate.svg" alt="Imagen: Turismo Cafayate" class="asideIconTur"></a>
-                            <figcaption class="asideFigCap">Actividades</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </aside>
-            <!-- End Aside -->
-            <!-- Footer -->
-            <footer id="footer">
-                <div class="footerFlex">
-                    <div class="pDiv">
-                        <p>Seguinos en nuestras redes sociales:</p>
-                    </div>
-                    <div class="iconDiv">
-                        <a href="https://www.facebook.com/" target="blank"><img src="icons/facebookLight.svg" alt="Facebook" class="iconFooter"</a>
-                        <a href="https://www.instagram.com/" target="blank"><img src="icons/instagramLIght.svg" alt="Instagram" class="iconFooter"></a>
-                        <a href="https://twitter.com/" target="blank"><img src="icons/twitterLight.svg" alt="Twitter"class="iconFooter"></a>
-                    </div>  
-                </div>
-            </footer>
-            <!-- End Footer -->
         </div>
-    </body>
+    </nav>
+    <!-- Ends Navbar -->
+    <!-- Main -->
+    <main>
+        <h1 class="title">CONTACTENOS</h1>
+        <article>
+            <p class="anounce">
+                <strong>
+                    Por favor, complete el formulario y le responderemos a la brevedad
+                </strong>
+            </p>
+        </article>
+        <!-- Contact form & data -->
+        <div class="col-md-12 px-1 mx-auto row">
+            <form action="#" class="contactForm col-md-6 col-lg-8 row ms-auto me-0">
+                
+                <div class="col-md-12 col-lg-6 mb-3">
+                    <label for="names" class="col-lg-12">Nombre/s:</label>
+                    <input type="text" name="names" id="names" placeholder="Por favor, escriba su/s nombre/s" class="textInput col-lg-12">
+                </div>
+
+                <div class="col-md-12 col-lg-6 mb-3">
+                    <label for="lNames" class="col-lg-12">Apellido/s:</label>
+                    <input type="text" name="lNames" id="lNames" placeholder="Por favor, escriba su/s apellido/s" class="textInput col-lg-12">
+                </div>
+                
+                <div class="col-md-12 col-lg-6 mb-3">
+                    <label for="phone" class="col-lg-12">N° de Telefono:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Por favor, escriba su N° de telefono con su codigo de área" class="telInput col-lg-12">
+                </div>
+
+                <div class="col-md-12 col-lg-6 mb-3">
+                    <label for="mail" class="col-lg-12">e-m@il:</label>
+                    <input type="email" name="mail" id="mail" placeholder="Por favor, escriba su dirección de e-m@ail" class="mailInput col-lg-12">
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <label for="subject" class="col-md-12">Motivo de la Consulta:</label>
+                    <input type="text" name="subject" id="subject" placeholder="Por favor, escriba el motivo de su consulta"class="col-md-12">
+                </div>
+                
+                <div class="col-md-12 mb-3">
+                    <label for="message" class="col-md-12">Mensaje:</label>
+                    <textarea name="message" id="message" cols="140" rows="15" class="col-md-12"></textarea>
+                </div>
+                
+                <div class="row col-md-12 col-lg-8 mb-3">
+                    <div class="col-md-12 col-lg-6">
+                        <button type="submit" class="button reserve">
+                            <span>Enviar</span>
+                        </button>
+                    </div>
+                
+                    <div class="col-md-12 col-lg-6 mb-3">
+                        <button type="reset" class="button col-md-12 col-lg-6">
+                            <span>Cancelar</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!-- Ends Form -->
+            <!-- Contact Info -->
+            <div class="contactInfo col-md-6 col-lg-3 row ms-0 me-auto">
+                <div class=" col-md-12 mb-3">
+                    <h4 class="anounceLightCenter">Mas Información</h4>
+                </div>  
+                
+                <div class="col-md-12 row mb-3">
+                    <img src="icons/whatsapp.svg" alt="whatsapp" class="col-md-6">
+                    <p class="listAtentionDark col-md-6">
+                        +549-387-4654654
+                    </p>
+                </div>
+
+                <div class="col-md-12 row mb-3">
+                    <img src="icons/phone.svg" alt="telephone" class="col-md-6">
+                    <p class="listAtentionDark col-md-6">
+                        +549-387-1231231
+                    </p>
+                </div>
+                    
+                <div class="col-md-12 mb-3 row">
+                    <img src="icons/positionIcon.svg" alt="Dirección" class="col-md-6">
+                    <p class="listAtentionDark col-md-10">
+                        Camila Quintana de Niño N° 38
+                        Cafayate, Salta, Argentina
+                    </p>
+                </div>
+
+                <div class="iframe mb-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633.5334923768339!2d-65.97548521755444!3d-26.072575323912258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941f316b35cd231d%3A0x391cca1112b1f48a!2sLos%20Toneles!5e0!3m2!1ses-419!2sar!4v1644368953730!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    
+
+        <h2 class="cardTitle">Precios</h2>
+        <!-- Price Table -->
+        <table class="table price mx-auto">
+            <thead>
+                <tr>
+                    <th scope="col">Habitación</th>
+                    <th scope="col">Doble</th>
+                    <th scope="col">Triple</th>
+                    <th scope="col">Cuadruple</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Superior</th>
+                    <td>AR$ 9.000</td>
+                    <td>AR$ 12.000</td>
+                    <td>AR$ 14.000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Estándard</th>
+                    <td>AR$8.000</td>
+                    <td>AR$10.500</td>
+                    <td>AR$12.500</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+<!-- Aside -->
+<aside id="interest">
+    <div class="asideGrid">
+            <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
+        <div id="trip" class="asideFigures">
+            <figure>
+                <a href="https://www.tripadvisor.com.ar/Hotel_Review-g317027-d3200726-Reviews-Los_Toneles-Cafayate_Province_of_Salta_Northern_Argentina.html" target="blank"><img src="icons/tripicon.svg" alt="Ícono y enláce a Trip Advisor" class="asideIcon"></a>
+                <figcaption class="asideFigCap">Trip Advisor</figcaption>
+            </figure>
+        </div>
+        <div id="booking" class="asideFigures">
+                <a href="https://www.booking.com/hotel/ar/cafayate-los-toneles.es.html" target="blank"><img src="icons/booking.svg" alt="Ícono y enláce a Booking" class="asideIcon"></a>
+                <figcaption class="asideFigCap">Booking</figcaption>
+            </figure>
+        </div>
+        <div class="asideFigures" id="cafayate">
+            <figure>
+                <a href="https://www.facebook.com/SECTURCAFAYATE/" target="blank"><img src="icons/turismocafayate.svg" alt="Imagen: Turismo Cafayate" class="asideIconTur"></a>
+                <figcaption class="asideFigCap">Actividades</figcaption>
+            </figure>
+        </div>
+    </div>
+</aside>
+<!-- End Aside -->
+<!-- Footer -->
+<footer id="footer">
+    <div class="footerFlex">
+        <div class="pDiv">
+            <p>Seguinos en nuestras redes sociales:</p>
+        </div>
+        <div class="iconDiv">
+            <a href="https://www.facebook.com/" target="blank"class="footerIcon"><img src="icons/facebookLight.svg" alt="Facebook" class="iconFooter"></a>
+            <a href="https://www.instagram.com/" target="blank" class="footerIcon"><img src="icons/instagramLIght.svg" alt="Instagram" class="iconFooter"></a>
+            <a href="https://twitter.com/" target="blank" class="footerIcon"><img src="icons/twitterLight.svg" alt="Twitter"class="iconFooter"></a>
+        </div>  
+    </div>
+</footer>
+<!-- End Footer -->
+<!-- Scrtipt js bootsrap -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
 </html>

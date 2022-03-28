@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="favicon" href="icons/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>HOTEL LOS TONELES - CAFAYATE</title>
 </head>
 <body>
@@ -49,18 +49,20 @@
     <main>
         <!--Section Data  -->
         <section class="py-3">
-            <!-- Contaioner -->
+            
+            <!-- Title -->
+            <h1 class="title">Nuestras <span>Habitaciones</span></h1>
+            <!-- Ends Title -->
+            
+            <!-- Container -->
             <div class="container-fluid">
-                <!-- Title -->
-                <h1>Nuestras <span>Habitaciones</span></h1>
-                <!-- Ends Title -->
                 <div class="container-fluid row infoContainer">
                     <!-- First Sub-Section --> 
                     <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark">
-                        <h2 class="pt-1 mt-1">Habitación Superior</h2>
+                        <h2 class="pt-1 mt-1 cardTitleLight">Habitación Superior</h2>
                         <div class="container-fluid col-md-3 col-lg-4 pb-5">
                             <!-- Carousel -->
-                            <div id="carousel" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+                            <div id="supCarousel" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="img/habsup.jpg" class="d-block w-100" alt="IMagen Frente del Hotel Los Toneles - Cafayate">
@@ -72,11 +74,11 @@
                                         <img src="img/castillos.jpg" class="d-block w-100" alt="Pileta Hotel Los Toneles - Cafayate">
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#supCarousel" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button" data-bs-target="#supCarousel" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -120,10 +122,10 @@
                     <!-- Ends Second Subsection -->
                     <!-- Third Sub-section Standar Room -->
                     <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight">
-                        <h2 class="pt-1 mt-1">Habitación Estándard</h2>
+                        <h2 class="pt-1 mt-1 cardTitle">Habitación Estándard</h2>
                         <div class="container-fluid col-md-3 col-lg-4 pb-5">
                             <!-- Carousel Habitación Standar -->
-                            <div id="carousel" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+                            <div id="hStaCarousel" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="img/habitacionsta.jpg" class="d-block w-100" alt="IMagen Frente del Hotel Los Toneles - Cafayate">
@@ -135,11 +137,11 @@
                                         <img src="img/medanos.jpg" class="d-block w-100" alt="Pileta Hotel Los Toneles - Cafayate">
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#hStaCarousel" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button" data-bs-target="#hStaCarousel" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -185,9 +187,9 @@
         </section>
         <!-- Ends Secrtion Data -->
         <!-- Ends Info -->
-        <h2>Precios</h2>
+        <h2 class="cardTitle">Precios</h2>
         <!-- Price Table -->
-        <table class="table price mx-auto">
+        <table class="table mx-auto">
             <thead>
                 <tr>
                     <th scope="col">Habitación</th>
@@ -312,19 +314,19 @@
 <!-- End Aside -->
 <!-- Footer -->
 <footer id="footer">
-    <div class="footerFlex">
+    <div class="footerFlex w-100">
         <div class="pDiv">
             <p>Seguinos en nuestras redes sociales:</p>
         </div>
         <div class="iconDiv">
-            <a href="https://www.facebook.com/" target="blank"><img src="icons/facebookLight.svg" alt="Facebook" class="iconFooter"</a>
-            <a href="https://www.instagram.com/" target="blank"><img src="icons/instagramLIght.svg" alt="Instagram" class="iconFooter"></a>
-            <a href="https://twitter.com/" target="blank"><img src="icons/twitterLight.svg" alt="Twitter"class="iconFooter"></a>
+            <a href="https://www.facebook.com/" target="blank" class="footerIcon"><img src="icons/facebookLight.svg" alt="Facebook" class="iconFooter"</a>
+            <a href="https://www.instagram.com/" target="blank" class="footerIcon"><img src="icons/instagramLIght.svg" alt="Instagram" class="iconFooter"></a>
+            <a href="https://twitter.com/" target="blank" class="footerIcon"><img src="icons/twitterLight.svg" alt="Twitter"class="iconFooter"></a>
         </div>  
     </div>
 </footer>
 <!-- End Footer -->
 <!-- Scrtipt js bootsrap -->
-<script src="js/bootstrap.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
