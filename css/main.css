@@ -8111,6 +8111,21 @@ div .icons {
   .cardTitleLight span {
     color: #f2f2f2; }
 
+.ups {
+  background-color: #210606;
+  color: #d7ccc8;
+  margin: auto;
+  text-align: center; }
+  .ups .sentir {
+    font-size: 4em;
+    font-family: "Cinzel Decorative", cursive; }
+  .ups .reintenta {
+    font-size: 1.5em; }
+
+.tableDiv {
+  background-color: none;
+  margin-top: 3em; }
+
 .table {
   font-family: "Quicksand", sans-serif;
   color: #210606;

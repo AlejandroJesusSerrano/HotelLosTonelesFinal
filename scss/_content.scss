@@ -76,3 +76,25 @@
         color: $secondaryLightColor;
     }
 }
+
+.ups{
+    background-color: $mainColor;
+    color: $mainLightColor;
+    margin:auto;
+    text-align: center;
+
+
+    .sentir{
+        font-size: $textLg;
+        font-family:  $fontTitle;
+    }
+
+    .reintenta{
+        font-size: $textNl;
+    }
+}
+
+.tableDiv{
+    background-color: none;
+    margin-top: 3em;
+}

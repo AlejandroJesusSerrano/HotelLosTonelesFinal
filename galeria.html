@@ -1,86 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Imágenes - Los Toneles Hotel de Cafayate</title>
     <link rel="icon" type="favicon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <title>HOTEL LOS TONELES - CAFAYATE</title>
 </head>
-<body class="bodyGallery">
-    <!-- Inicia Barra de Navegación y Encabezado -->
-    <header>
-        <nav>
-            <div class="navContainer">
-                <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="Los Toneles Hotel de Cafayate logo" class="logoToneles">
-                </a>
-                <ol class="navBar">
-                <li><a href="habitaciones.html">Habitaciones y Precios</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
-                <li><a href="lugares.html">¿Qué conocer?</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                </ol>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navColor w-100">
+        <div class="navContainer container-fluid">
+            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo Hotel Los Toneles"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="reservascon.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">Instalaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cafayate.html">Descubre Cafayate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="galeria.html"> Galería</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!-- End Navbar -->   
-    </header>
-    <!-- End Header -->
+        </div>
+    </nav>
+    <!-- Ends Navbar -->
     <main>
     <!-- Inicia Main  -->
-        <section>
-        <!-- Inicia Section -->
-            <h1 class="h1BackLight">¡GALERIA DE IMÁGENES!</h1>
-            <div class="sectionContainerCenter">
-                <div class="imgCentral">
-                <!-- Cuando se haga click en una miniatura se debe Mostrar en este DIV, dando la posibilidad de mostrar a Pantalla completa -->
-                    <img src="img/frente.jpg" alt="Fachada Hotel Los Toneles Cafayate Salta" class="imgTopCenter">
-                </div>
-                <!-- Fin Contenedor Imágen Central -->
-                <h2 class="h2Light">Nuestro Hotel</h2>
-                <!-- Inicia Contenodor Miniaturas Hotel -->
-                <div class="sectionContainerMIni">
-                    <!-- Etiqueta <p>, futuro boton para retroceder miniaturas (Serán más de 4 imágenes) -->
-                    <p class="alignLeft atentionNoBackLight"><</p>
-                    <img src="img/desayuno2.jpg" alt="Desayuno Hotel Los Toneles Cafayate Salta" class="imgMini">
-                    <img src="img/patio cervecero.jpg" alt="Patio Cervecero Hotel Los Toneles Cafayate Salta" class="imgMini">
-                    <img src="img/pileta.jpg" alt="Pileta Hotel Los Toneles Cafayate Salta" class="imgMiniVert">
-                    <img src="img/resto.jpg" alt="Salón de Usos Múltiples Hotel Los Toneles Cafayate Salta" class="imgMini">
-                    <!-- Etiqueta <p>, futuro boton para avanzar miniaturas (Serán más de 4 imágenes) -->
-                    <p class="alignRight atentionNoBack">></p>
-                <!-- Fin Contenedor Miniaturas Hotel -->
-                </div>
-                <h2 class="h2Light">Cafayate</h2>
-                <!-- Inicia Contenedor Miniaturas Cafayate -->
-                <div class="class="sectionContainerMIni">
-                    <!-- Etiqueta <p>, futuro boton para retroceder miniaturas (Serán más de 4 imágenes) -->
-                    <p class="alignLeft atentionNoBackLight"><</p>                    
-                    <img src="img/ventanas.jpg" alt="Las Ventanas en la Quebrada de las Conchas - camino a Cafayate" class="imgMini">
-                    <img src="img/serenata.jpg" alt="La Serenta, Febrero en Cafayate" class="imgMini">
-                    <img src="img/yesera.jpg" alt="La Yesera, Ruta Salta - Cafayate" class="imgMini">
-                    <img src="img/castillos.jpg" alt="Los Castillos, Ruta Salta - Cafayate" class="imgMini">
-                    <!-- Etiqueta <p>, futuro boton para avanzar miniaturas (Serán más de 4 imágenes) -->
-                    <p class="alignRight atentionNoBack">></p>
-                <!-- Fin Contenedor Miniaturas Cafayate -->
-                </div>    
-            </div>    
-        </section>
-        <!-- Fin Section -->
+        
     </main>
-    <!-- Fin Main -->
-    <footer class="footerIcons">
-        <!-- Inicio Footer -->
-            <div>
-                <p>Seguinos en nuestras redes sociales:</p>
+    <h1 class="title">Galería de <span>Imágenes</span></h1>
+
+    <div class="row m-5">
+        <div class="col-lg-4 mb-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+                <img class="w-100 mb-4 rounded" src="img/gym.jpg" alt="cafayate">
+            </a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+                <img class="w-100 mb-4 rounded" src="img/y/vino.jpg" alt="anfiteatro">
+            </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+                <img class="w-100 mb-4 rounded" src="img/y/asador.jpg" alt="anfiteatro">
+            </a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
+                <img class="w-100 mb-4 rounded" src="img/castillos.jpg" alt="Los Castillos Cafayate">
+            </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5">
+                <img class="w-100 mb-4 rounded" src="img/desayuno.jpg" alt="Desayuno Hotel">
+            </a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6">
+                <img class="w-100 mb-4 rounded" src="img/y/miradorNoche.jpg" alt="Mirador de la Terraza del Hotel de Noche">
+            </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage7">
+                <img class="w-100 mb-4 rounded" src="img/y/ventanaSum.jpg" alt="VIsta desde el Sum">
+            </a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage8">
+                <img class="w-100 mb-4 rounded" src="img/desayuno2.jpg" alt="Desayuno Hotel">
+            </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage9">
+                <img class="w-100 mb-4 rounded" src="img/entradaNoche.jpg" alt="Entrda del Hotel de Noche">
+            </a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage10">
+                <img class="w-100 mb-4 rounded" src="img/y/patioCerNoche.jpg" alt="Patio Cervecero de noche">
+            </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage11">
+                <img class="w-100 mb-4 rounded" src="img/y/piletaVert.jpg" alt="Pileta del Hotel">
+            </a>
+            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage12">
+                <img class="w-100 mb-4 rounded" src="img/entradaDia.jpg" alt="Entrada del Hotel día">
+            </a>
+        </div>
+    </div>
+    <!-- Galería Modal -->
+    <!-- Image 1 -->
+    <div tabindex="-1" aria-labelledby="modalImages1" aria-hidden="true"
+    class="modal fade" id="modalImage1">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/gym.jpg" alt="Gimnasio">
             </div>
-            <a href="https://www.facebook.com/" target="blank"><img src="icons/facebook.png" alt="Facebook" class="iconFooter"</a>
-            <a href="https://www.instagram.com/" target="blank"><img src="icons/instagram.png" alt="Instagram" class="iconFooter"></a>
-            <a href="https://twitter.com/" target="blank"><img src="icons/twitter.png" alt="Twitter"class="iconFooter"></a>
-    </footer>
-    <!-- End Footer -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>   
+
+        </div>
+        
+    </div>
+    <!-- Image 2 -->
+    <div tabindex="-1" aria-labelledby="modalImages2" aria-hidden="true"
+    class="modal fade" id="modalImage2">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/y/vino.jpg" alt="Parrila del Hotel">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 3 -->
+    <div tabindex="-1" aria-labelledby="modalImages3" aria-hidden="true"
+    class="modal fade" id="modalImage3">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/y/asador.jpg" alt="Parilla en el Hotel Los Toneles">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 4 -->
+    <div tabindex="-1" aria-labelledby="modalImages4" aria-hidden="true"
+    class="modal fade" id="modalImage4">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/castillos.jpg" alt="Desayuno en el Hotel">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 5 -->
+    <div tabindex="-1" aria-labelledby="modalImages5" aria-hidden="true"
+    class="modal fade" id="modalImage5">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/desayuno.jpg" alt="Los Castillos Rurta Salta-Cafayate">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 6 -->
+    <div tabindex="-1" aria-labelledby="modalImages6" aria-hidden="true"
+    class="modal fade" id="modalImage6">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/y/miradorNoche.jpg" alt="Vista del Hotel desde el mirador-Noche">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 7 -->
+    <div tabindex="-1" aria-labelledby="modalImages7" aria-hidden="true"
+    class="modal fade" id="modalImage7">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/y/ventanaSum.jpg" alt="Vista desde el Sum">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 8 -->
+    <div tabindex="-1" aria-labelledby="modalImages8" aria-hidden="true"
+    class="modal fade" id="modalImage8">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/desayuno2.jpg" alt="Desayuno del Hotel">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 9 -->
+    <div tabindex="-1" aria-labelledby="modalImages9" aria-hidden="true"
+    class="modal fade" id="modalImage9">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/entradaNoche.jpg" alt="Entrada del Hotel de Noche">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 10 -->
+    <div tabindex="-1" aria-labelledby="modalImages10" aria-hidden="true"
+    class="modal fade" id="modalImage10">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/y/patioCerNoche.jpg" alt="Patio Cervecero Durante la Noche">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 11 -->
+    <div tabindex="-1" aria-labelledby="modalImages11" aria-hidden="true"
+    class="modal fade" id="modalImage11">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/y/piletaVert.jpg" alt="Pileta del Hotel">
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Image 12 -->
+    <div tabindex="-1" aria-labelledby="modalImages12" aria-hidden="true"
+    class="modal fade" id="modalImage12">
+        <div class="modal-dialog modal-lg modal-dialog-center">
+            
+            <div class="modal-content">
+                <img src="img/entradaDia.jpg" alt="Entrada del Hotel de Día">
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <!-- Fin Main -->
+    <!-- Aside -->
+<aside id="interest">
+    <div class="asideGrid">
+            <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
+        <div id="trip" class="asideFigures">
+            <figure>
+                <a href="https://www.tripadvisor.com.ar/Hotel_Review-g317027-d3200726-Reviews-Los_Toneles-Cafayate_Province_of_Salta_Northern_Argentina.html" target="blank"><img src="icons/tripicon.svg" alt="Ícono y enláce a Trip Advisor" class="asideIcon"></a>
+                <figcaption class="asideFigCap">Trip Advisor</figcaption>
+            </figure>
+        </div>
+        <div id="booking" class="asideFigures">
+                <a href="https://www.booking.com/hotel/ar/cafayate-los-toneles.es.html" target="blank"><img src="icons/booking.svg" alt="Ícono y enláce a Booking" class="asideIcon"></a>
+                <figcaption class="asideFigCap">Booking</figcaption>
+            </figure>
+        </div>
+        <div class="asideFigures" id="cafayate">
+            <figure>
+                <a href="https://www.facebook.com/SECTURCAFAYATE/" target="blank"><img src="icons/turismocafayate.svg" alt="Imagen: Turismo Cafayate" class="asideIconTur"></a>
+                <figcaption class="asideFigCap">Actividades</figcaption>
+            </figure>
+        </div>
+    </div>
+</aside>
+<!-- End Aside -->
+<!-- Footer -->
+<footer id="footer">
+    <div class="footerFlex w-100">
+        <div class="pDiv">
+            <p>Seguinos en nuestras redes sociales:</p>
+        </div>
+        <div class="iconDiv">
+            <a href="https://www.facebook.com/" target="blank" class="footerIcon"><img src="icons/facebookLight.svg" alt="Facebook" class="iconFooter"</a>
+            <a href="https://www.instagram.com/" target="blank" class="footerIcon"><img src="icons/instagramLIght.svg" alt="Instagram" class="iconFooter"></a>
+            <a href="https://twitter.com/" target="blank" class="footerIcon"><img src="icons/twitterLight.svg" alt="Twitter"class="iconFooter"></a>
+        </div>  
+    </div>
+</footer>
+<!-- End Footer -->
+<!-- Scrtipt js bootsrap -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
