@@ -7,6 +7,16 @@
     }
 }
 
+.titleBig{
+    @extend .title;
+    font-size: $textXXL
+}
+
+.subtitle{
+    @extend .title;
+    font-size: $textLg;
+}
+
 .infoContainer{
     align-items: center;
     justify-content: center;
@@ -94,4 +104,12 @@
 .tableDiv{
     background-color: none;
     margin-top: 3em;
+}
+
+.err404{
+    @include backDiv (url(../img/404.png), no-repeat, center);
+}
+
+.err404Alpha{
+    background-color: map-get($map:$colorSchema,$key:'mainLightAlpha');
 }

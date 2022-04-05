@@ -8045,16 +8045,22 @@ input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicat
           color: #f2f2f2;
           text-decoration: underline; }
 
-.title, .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
+.title, .titleBig, .subtitle, .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
   font-family: "Cinzel Decorative", cursive;
   font-size: 6em;
   line-height: 1.5em;
   color: #210606;
   padding: 2px;
   text-align: center; }
-  .title span, .cardTitle span, .contactInfo h4 span, .contactInfo .h4 span, .cardTitleLight span {
+  .title span, .titleBig span, .subtitle span, .cardTitle span, .contactInfo h4 span, .contactInfo .h4 span, .cardTitleLight span {
     font-family: "Cinzel Decorative", cursive;
     color: #5d4037; }
+
+.titleBig {
+  font-size: 10em; }
+
+.subtitle {
+  font-size: 4em; }
 
 .infoContainer {
   align-items: center;
@@ -8121,6 +8127,14 @@ div .icons {
 .tableDiv {
   background-color: none;
   margin-top: 3em; }
+
+.err404 {
+  background-image: url(../img/404.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.err404Alpha {
+  background-color: rgba(215, 204, 200, 0.7); }
 
 .table {
   font-family: "Quicksand", sans-serif;

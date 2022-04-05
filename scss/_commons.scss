@@ -4,6 +4,7 @@
 $colorSchema:(
     'main': #210606, 
     'mainLight':#d7ccc8,
+    'mainLightAlpha':rgba(215,204,200, .7),
     'second':#402525,
     'secondLight': #f2f2f2,
     'deco': #5d4037,
@@ -34,3 +35,17 @@ body{
     padding: 2px;
     text-align: center;
 }
+
+@mixin flex ($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    box-sizing: border-box;
+}
+
+@mixin backDiv ($image, $repeat, $position){
+    background-image: $image;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+    
