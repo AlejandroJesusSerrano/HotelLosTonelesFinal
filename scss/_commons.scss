@@ -1,13 +1,14 @@
 // variables
 
-//colores
-$mainColor:#210606; 
-$mainLightColor:#d7ccc8;
-$secondaryColor:#402525;
-$secondaryLightColor:#f2f2f2;
-$decoColor:#5d4037;
-$navBarColor:rgba(64, 37, 37,.7);
-$btnAnimateColor:#e8d0b3;
+// colorMap
+$colorSchema:(
+    'main': #210606, 
+    'mainLight':#d7ccc8,
+    'second':#402525,
+    'secondLight': #f2f2f2,
+    'deco': #5d4037,
+    'nav': rgba(64, 37, 37,.7),
+    'btnAnim' :#e8d0b3,);
 
 
 //sizing
@@ -22,4 +23,14 @@ $h25:25vh;
 
 body{
     background-image:url(../img/background.jpg)
+}
+
+// mixins
+@mixin titles($fontFamily, $fontSize, $lineHeight, $color){
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $color;
+    padding: 2px;
+    text-align: center;
 }

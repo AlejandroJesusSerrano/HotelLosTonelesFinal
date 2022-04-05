@@ -1,12 +1,9 @@
 .title{
-    font-family:$fontTitle;
-    font-size:$textXL;
-    color:$mainColor;
-    text-align:center;
+    @include titles($fontTitle, $textXL, 1.5em, map-get($map:$colorSchema,$key:'main'));
 
     span{
         font-family:$fontTitle;
-        color:$decoColor;
+        color:map-get($map:$colorSchema,$key:'deco');
     }
 }
 
@@ -18,20 +15,20 @@
 .impressionLight {
     width: 98vw;
     align-items: center;
-    background-color:$secondaryLightColor;
+    background-color:map-get($map:$colorSchema,$key:'secondLight');
     justify-items: center;
 }
 
 .impressionDark {
     width: 98vw;
     align-items: center;
-    background-color:$decoColor;
+    background-color:map-get($map:$colorSchema,$key:'deco');
     justify-items: center;
 }
 
     .container-fluid .paragraph{
         font-size: 2em;
-        color: $secondaryColor;
+        color: map-get($map:$colorSchema,$key:'second');
     }
 
     .container-fluid img{
@@ -39,7 +36,7 @@
     }
 
     .container-fluid figcaption{
-        color: $secondaryColor;
+        color: map-get($map:$colorSchema,$key:'second');
         text-align: center;
         text-decoration: overline;
         font-style:italic;
@@ -51,16 +48,16 @@
 }
 
     .impressionDark h2 {
-        color: $mainLightColor;
+        color: map-get($map:$colorSchema,$key:'mainLight');
     }
 
         .impressionDark .container-fluid figcaption {
-            color: $mainColor;
+            color: map-get($map:$colorSchema,$key:'main');
         }
 
         .impressionDark .container-fluid .paragraph{
             font-size: 2em;
-            color: $mainLightColor;
+            color: map-get($map:$colorSchema,$key:'mainLight');
         }
 
 .cardTitle{
@@ -70,16 +67,16 @@
 
 .cardTitleLight{
     @extend .cardTitle;
-    color:$mainLightColor;
+    color:map-get($map:$colorSchema,$key:'mainLight');
     
     span{
-        color: $secondaryLightColor;
+        color:map-get($map:$colorSchema,$key:'secondLight');
     }
 }
 
 .ups{
-    background-color: $mainColor;
-    color: $mainLightColor;
+    background-color: map-get($map:$colorSchema,$key:'main');
+    color: map-get($map:$colorSchema,$key:'mainLight');
     margin:auto;
     text-align: center;
 

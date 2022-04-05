@@ -1,6 +1,6 @@
 .table{
     font-family: $fontMain;
-    color: $mainColor;
+    color: map-get($map:$colorSchema,$key:'main');
     font-size: 2em;
     text-align: center;
 }

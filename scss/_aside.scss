@@ -6,7 +6,7 @@ aside{
     box-sizing: border-box;
     text-align: center;
     .asideGrid{
-        background: #e8d0b3;
+        background: map-get($map:$colorSchema,$key:'btnAnim');
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -19,7 +19,7 @@ aside{
             grid-area: asideTitle;
             font-family: $fontTitle;
             font-size: $texth3;
-            color: $mainColor;
+            color: map-get($map:$colorSchema,$key:'main');
             text-align: center;
         }
         #trip{
@@ -42,7 +42,7 @@ aside{
 
 .asideFigCap{
     font-size: 2em;
-    color: #210606;
+    color: map-get($map:$colorSchema,$key:'main');
 }
 
 .asideIcon{

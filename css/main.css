@@ -8001,33 +8001,27 @@ input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicat
   position: relative;
   overflow: hidden;
   box-sizing: border-box; }
+  .button:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -6em;
+    left: 0;
+    transition: .3s ease-in-out all;
+    box-sizing: border-box; }
+  .button:hover:after {
+    top: 0; }
 
 .button span {
   position: relative;
   z-index: 2;
   transition: .3s ease all; }
 
-.button:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #e8d0b3;
-  position: absolute;
-  z-index: 1;
-  top: -6em;
-  left: 0;
-  transition: .3s ease-in-out all;
-  box-sizing: border-box; }
-
-.button:hover:after {
-  top: 0; }
-
 .reserve {
   background: #d7ccc8;
   color: #210606; }
-
-.reserve:after {
-  background-color: #e8d0b3; }
 
 .navColor {
   background-color: rgba(64, 37, 37, 0.7);
@@ -8054,7 +8048,9 @@ input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicat
 .title, .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
   font-family: "Cinzel Decorative", cursive;
   font-size: 6em;
+  line-height: 1.5em;
   color: #210606;
+  padding: 2px;
   text-align: center; }
   .title span, .cardTitle span, .contactInfo h4 span, .contactInfo .h4 span, .cardTitleLight span {
     font-family: "Cinzel Decorative", cursive;

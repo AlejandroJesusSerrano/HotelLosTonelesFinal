@@ -33,8 +33,8 @@
     justify-content: center;
     width: 100%;
     height:6rem;
-    background:#210606;
-    color:#f2f2f2;
+    background:map-get($map:$colorSchema,$key:'main');
+    color:map-get($map:$colorSchema,$key:'secondLight');
     font-family: 'Quicksand', sans-serif;
     font-size: 2rem;
     font-weight: 600;
@@ -47,6 +47,21 @@
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+    &:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: map-get($map:$colorSchema,$key:'btnAnimColor');
+        position: absolute;
+        z-index: 1;
+        top: -6em;
+        left: 0;
+        transition: .3s ease-in-out all;
+        box-sizing: border-box;
+    }
+    &:hover:after{
+        top:0;
+    }
 }
 
 .button span{
@@ -55,28 +70,11 @@
     transition: .3s ease all;
 }
 
-.button:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: $btnAnimateColor;
-    position: absolute;
-    z-index: 1;
-    top: -6em;
-    left: 0;
-    transition: .3s ease-in-out all;
-    box-sizing: border-box;
-}
-
-.button:hover:after{
-    top:0;
-}
-
 .reserve{
-    background:#d7ccc8;
-    color:#210606;
+    background:map-get($map:$colorSchema,$key:'mainLight');
+    color:map-get($map:$colorSchema,$key:'main');
 }
 
 .reserve:after{
-    background-color: $btnAnimateColor;
+    background-color: map-get($map:$colorSchema,$key:'btnAnimColor');
 }
