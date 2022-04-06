@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon" href="icons/favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <title>Hotel Los Toneles - Cafayate Salta Argentina - ¡Por favor realiza tu reserva!</title>
     <meta name="description" content= "Completa el formulario y comienza a disfrutar de tu próximo descanso">
     <meta name="keywords" content="hotel, cafayate, reservas, disponibilidad, habitación,">
+    <link rel="icon" type="favicon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css"> 
 </head>
 <body>
     <!-- Navbar -->
@@ -52,13 +54,13 @@
     <!-- Ends Navbar -->
     <!-- Main Contet -->
     <main class="w-100 mx-0 px-0">
-        <h1 class="title">Reservas</h1>
+        <h1 class="title wow animate__animated animate__fadeInDown">Reservas</h1>
         <article>
-            <p class="anounce"><strong>Por favor, complete los datos del siguiente formulario para efectuar su reserva</strong></p>
+            <p class="anounce wow animate__animated animate__fadeInUp"><strong>Por favor, complete los datos del siguiente formulario para efectuar su reserva</strong></p>
         </article>
         <!-- Inicio ReserveForm -->
         <!-- se envía a reservassin a modo de Demo -->
-        <div class="py-2 backBrown">
+        <div class="py-2 backBrown wow animate__animated animate__fadeInLeft">
             <form action="reservassin.html">
                 <!-- Section 1 -->
                 
@@ -176,9 +178,9 @@
             </form>
             <!-- End Form -->
         </div>
-        <h2 class="cardTitle">Precios</h2>
+        <h2 class="cardTitle wow animate__animated animate__fadeInRight">Precios</h2>
         <!-- Price Table -->
-        <table class="table price mx-auto">
+        <table class="table price mx-auto wow animate__animated animate__fadeInLeft">
             <thead>
                 <tr>
                     <th scope="col">Habitación</th>
@@ -205,7 +207,7 @@
     </main>
 <!-- Aside -->
 <aside id="interest">
-    <div class="asideGrid">
+    <div class="asideGrid wow animate__animated animate__fadeInUp">
             <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
         <div id="trip" class="asideFigures">
             <figure>
@@ -229,7 +231,7 @@
 <!-- End Aside -->
 <!-- Footer -->
 <footer id="footer">
-    <div class="footerFlex">
+    <div class="footerFlex wow animate__animated animate__fadeInUp">
         <div class="pDiv">
             <p>Seguinos en nuestras redes sociales:</p>
         </div>
@@ -243,5 +245,10 @@
 <!-- End Footer -->
 <!-- Scrtipt js bootsrap -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- WOW -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

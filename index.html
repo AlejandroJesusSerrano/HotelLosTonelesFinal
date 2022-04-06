@@ -10,14 +10,8 @@
     <link rel="icon" type="favicon" href="icons/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    
-    <!-- WOW JS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css">    
 </head>
 <body>
     <!-- Navbar -->
@@ -82,9 +76,9 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- Ends Carousel -->    
+        <!-- Ends Carousel -->
         <!-- Availability Form -->
-        <div class="availForm py-2">
+        <div class="availForm py-2 wow animate__animated animate__fadeInUp">
             <!-- se muestra la etiqueta como form acción a los fines de simular funcionamiento -->
             <form action="reservascon.html">
                 <!-- Form Content -->  
@@ -160,14 +154,14 @@
         <!--Section Data  -->
         <section class="py-3">
             <!-- Contaioner -->
-            <div class="container-fluid">
+            <div class="container-fluid wow animate__animated animate__fadeInUp ">
                 <!-- Title -->
                 <h1 class="title">Relájate y <span>Disfruta</span></h1>
                 <!-- Ends Title -->
                 <div class="container-fluid row infoContainer">
                     <!-- First Sub-Section --> 
-                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight">
-                        <h2 class="pt-1 mt-1" >Nuestros Servicios</h2>
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight wow animate__animated animate__fadeInUp">
+                        <h2 class="pt-1 mt-1 cardTitle" >Nuestros Servicios</h2>
                         <div class="container-fluid col-md-3 col-lg-4">
                             <figure>
                                 <img src="img/patio cervecero.jpg" alt="Patio Cervecero Hotel Los Toneles">
@@ -195,8 +189,8 @@
                     </div>
                     <!-- Ends First Sub-Section -->
                     <!-- Second Sub-Section Superior Room -->
-                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark">
-                        <h2 class="pt-1 mt-1">Habitación Superior</h2>
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark wow animate__animated animate__fadeInUp">
+                        <h2 class="pt-1 mt-1 cardTitleLight">Habitación Superior</h2>
                         <div class="container-fluid col-md-3 col-lg-4">
                             <figure>
                                 <img src="img/habitacionsup.jpg" alt="Habitación Superior Hotel Los Toneles - Cafayate">
@@ -239,8 +233,8 @@
                     </div>
                     <!-- Ends Second Subsection -->
                     <!-- Third Sub-section Standar Room -->
-                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight">
-                        <h2 class="pt-1 mt-1">Habitación Estándard</h2>
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight wow animate__animated animate__fadeInUp">
+                        <h2 class="pt-1 mt-1 cardTitle">Habitación Estándard</h2>
                         <div class="container-fluid col-md-3 col-lg-4">
                             <figure>
                                 <img src="img/habitacionsta.jpg" alt="Patio Cervecero Hotel Los Toneles">
@@ -289,7 +283,7 @@
     </main>
 <!-- Aside -->
 <aside>
-    <div class="asideGrid">
+    <div class="asideGrid wow animate__animated animate__fadeInUp">
         <h3 class="asideTitle" id="asideTitle">También nos podes encontrar en: </h3>
         <div id="trip" class="asideFigures">
             <figure>
@@ -313,7 +307,7 @@
 <!-- End Aside -->
 <!-- Footer -->
 <footer id="footer">
-    <div class="footerFlex w-100">
+    <div class="footerFlex w-100 wow animate__animated animate__fadeInUp">
         <div class="pDiv">
             <p>Seguinos en nuestras redes sociales:</p>
         </div>
@@ -327,5 +321,10 @@
 <!-- End Footer -->
 <!-- Scrtipt js bootsrap -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- WOW script -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

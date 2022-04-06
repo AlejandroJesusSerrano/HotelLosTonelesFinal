@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon" href="icons/favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <title>Hotel Los Toneles - ¡Conoce Nuestras Habitaciones!</title>
     <meta name="description" content= "Habitaciones pensadas en tu comodidad, tu confort, tu descanso y tu bolsillo">
     <meta name="keywords" content="hotel, cafayate, esparcimiento, descanso, familia, ruta, habitación, superior, estándard, comodidad, estacionamiento, reservas, disponibilidad">
+    <link rel="icon" type="favicon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -63,7 +65,7 @@
             <div class="container-fluid">
                 <div class="container-fluid row infoContainer">
                     <!-- First Sub-Section --> 
-                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark">
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark wow animate__animated animate__fadeInLeft">
                         <h2 class="pt-1 mt-1 cardTitleLight">Habitación Superior</h2>
                         <div class="container-fluid col-md-3 col-lg-4 pb-5">
                             <!-- Carousel -->
@@ -126,7 +128,7 @@
                     </div>
                     <!-- Ends Second Subsection -->
                     <!-- Third Sub-section Standar Room -->
-                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight">
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight wow animate__animated animate__fadeInRight">
                         <h2 class="pt-1 mt-1 cardTitle">Habitación Estándard</h2>
                         <div class="container-fluid col-md-3 col-lg-4 pb-5">
                             <!-- Carousel Habitación Standar -->
@@ -194,7 +196,7 @@
         <!-- Ends Info -->
         <h2 class="cardTitle">Precios</h2>
         <!-- Price Table -->
-        <table class="table mx-auto">
+        <table class="table mx-auto wow animate__animated animate__fadeInUp">
             <thead>
                 <tr>
                     <th scope="col">Habitación</th>
@@ -219,7 +221,7 @@
             </tbody>
         </table>
         <!-- Availability Form -->
-        <div class="availForm py-2 mb-3">
+        <div class="availForm py-2 mb-3 wow animate__animated animate__fadeInUp">
             <!-- se muestra la etiqueta como form acción a los fines de simular funcionamiento -->
             <form action="reservascon.html">
                 <!-- Form Content -->  
@@ -295,7 +297,7 @@
     </main>
 <!-- Aside -->
 <aside id="interest">
-    <div class="asideGrid">
+    <div class="asideGrid wow animate__animated animate__fadeInUp">
             <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
         <div id="trip" class="asideFigures">
             <figure>
@@ -319,7 +321,7 @@
 <!-- End Aside -->
 <!-- Footer -->
 <footer id="footer">
-    <div class="footerFlex w-100">
+    <div class="footerFlex w-100 wow animate__animated animate__fadeInUp">
         <div class="pDiv">
             <p>Seguinos en nuestras redes sociales:</p>
         </div>
@@ -333,5 +335,10 @@
 <!-- End Footer -->
 <!-- Scrtipt js bootsrap -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- WOW -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

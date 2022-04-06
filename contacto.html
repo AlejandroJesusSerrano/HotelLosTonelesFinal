@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon" href="icons/favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <title>Hotel Los Toneles - !Cantáctanos!</title>
     <meta name="description" content= "Contactanos para ayudarte a gestionar y resolver cualquier duda sobre tu estadía.>
     <meta name="keywords" content="hotel, cafayate, reserva, contacto, hubicación, telefono, whatsapp, maps, redes sociales, consultas, dudas, formulario, correo electrónico, e-mail, e mail, mail">
+    <link rel="icon" type="favicon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -62,7 +64,7 @@
         </article>
         <!-- Contact form & data -->
         <div class="col-md-12 px-1 mx-auto row">
-            <form action="#" class="contactForm col-md-6 col-lg-8 row ms-auto me-0">
+            <form action="#" class="contactForm col-md-6 col-lg-8 row ms-auto me-0 wow animate__animated animate__fadeInLeft">
                 
                 <div class="col-md-12 col-lg-6 mb-3">
                     <label for="names" class="col-lg-12">Nombre/s:</label>
@@ -110,7 +112,7 @@
             </form>
             <!-- Ends Form -->
             <!-- Contact Info -->
-            <div class="contactInfo col-md-6 col-lg-3 row ms-0 me-auto">
+            <div class="contactInfo col-md-6 col-lg-3 row ms-0 me-auto wow animate__animated animate__fadeInRight">
                 <div class=" col-md-12 mb-3">
                     <h4 class="anounceLightCenter">Mas Información</h4>
                 </div>  
@@ -144,9 +146,9 @@
         </div>
     
 
-        <h2 class="cardTitle">Precios</h2>
+        <h2 class="cardTitle wow animate__animated animate__fadeInUp">Precios</h2>
         <!-- Price Table -->
-        <table class="table price mx-auto">
+        <table class="table price mx-auto wow animate__animated animate__fadeInUp">
             <thead>
                 <tr>
                     <th scope="col">Habitación</th>
@@ -173,7 +175,7 @@
     </main>
 <!-- Aside -->
 <aside id="interest">
-    <div class="asideGrid">
+    <div class="asideGrid wow animate__animated animate__fadeInUp">
             <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
         <div id="trip" class="asideFigures">
             <figure>
@@ -197,7 +199,7 @@
 <!-- End Aside -->
 <!-- Footer -->
 <footer id="footer">
-    <div class="footerFlex">
+    <div class="footerFlex wow animate__animated animate__fadeInUp">
         <div class="pDiv">
             <p>Seguinos en nuestras redes sociales:</p>
         </div>
@@ -211,5 +213,10 @@
 <!-- End Footer -->
 <!-- Scrtipt js bootsrap -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- WOW script -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

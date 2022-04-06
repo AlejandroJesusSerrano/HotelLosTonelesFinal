@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon" href="icons/favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <title>Hotel Los Toneles - Cafayate - ¡Nuestras Instalaciones!</title>
     <meta name="description" content= "Conoce nuestras intalaciones, te ofrecemos pileta, terrazas con vistas panorámicas, juegos y mucho más.">
     <meta name="keywords" content="hotel, cafayate, esparcimiento, aventura, descanso, familia, habitación, superior, estándard, pileta, parrilla, casa, patio cervecero, terraza, vino, vino de altura, viñedos, malbec, torrontés, turismo, turista, atención, comodidad, estacionamiento, gimnasio, reservas, disponibilidad, juegos niños, juegos adultos">
+    <link rel="icon" type="favicon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -76,7 +79,7 @@
                     </div>
                     <!-- Ends First Sub-Section -->
                     <!-- Second Sub-Section Superior Room -->
-                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark">
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark wow animate__animated animate__fadeInUp">
                         <h2 class="pt-1 mt-1 cardTitleLight">Estacionamiento</h2>
                         <div class="container-fluid col-md-4">
                             <img src="icons/parkingiconLight.svg" alt="Icono Estacionamiento del Hotel Los Toenles - Cafayate">
@@ -93,7 +96,7 @@
                     </div>
                     <!-- Ends Second Subsection -->
                     <!-- Third Sub-section Standar Room -->
-                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight">
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight wow animate__animated animate__fadeInUp">
                         <h2 class="pt-1 mt-1 cardTitle" >Patio Cervecero y Matero</h2>
                         <div class="container-fluid col-md-8">
                             <figure>
@@ -110,7 +113,7 @@
                     </div>
                     <!-- Ends Third Sub-section -->
                     <!-- Fourth Subsection -->
-                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark">
+                    <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark wow animate__animated animate__fadeInUp">
                         <h2 class="pt-1 mt-1 cardTitleLight">Salon de Usos Múltiples</h2>
                         <div class="container-fluid col-md-4">
                             <img src="icons/sumiconlight.svg" alt="Icono Salon de Usos Múltiples">
@@ -132,9 +135,9 @@
         </section>
         <!-- Ends Secrtion Data -->
         <!-- Ends Info -->
-        <h2>Precios</h2>
+        <h2 class="cardTitle wow animate__animated animate__fadeInUp">Precios</h2>
         <!-- Price Table -->
-        <table class="table price mx-auto">
+        <table class="table price mx-auto wow animate__animated animate__fadeInUp">
             <thead>
                 <tr>
                     <th scope="col">Habitación</th>
@@ -159,7 +162,7 @@
             </tbody>
         </table>
         <!-- Availability Form -->
-        <div class="availForm py-2 mb-3">
+        <div class="availForm py-2 mb-3 wow animate__animated animate__fadeInUp">
             <!-- se muestra la etiqueta como form acción a los fines de simular funcionamiento -->
             <form action="reservascon.html">
                 <!-- Form Content -->  
@@ -235,7 +238,7 @@
     </main>
 <!-- Aside -->
 <aside id="interest">
-    <div class="asideGrid">
+    <div class="asideGrid wow animate__animated animate__fadeInUp">
             <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
         <div id="trip" class="asideFigures">
             <figure>
@@ -258,8 +261,8 @@
 </aside>
 <!-- End Aside -->
 <!-- Footer -->
-<footer id="footer">
-    <div class="footerFlex">
+<footer id="footer wow animate__animated animate__fadeInUp">
+    <div class="footerFlex wow animate__animated animate__fadeInUp">
         <div class="pDiv">
             <p>Seguinos en nuestras redes sociales:</p>
         </div>
@@ -273,5 +276,10 @@
 <!-- End Footer -->
 <!-- Scrtipt js bootsrap -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- WOW script -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

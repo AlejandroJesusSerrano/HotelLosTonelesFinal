@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon" href="icons/favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <title>Hotel Los Toneles - Cafayate - ¡Conócenos un poco!</title>
     <meta name="description" content= "Un hotel pensado para que te distiendas y disfrutes al máximo de Cafayate, sintiwendote como en tu casa">
     <meta name="keywords" content="hotel, cafayate, esparcimiento, confort, aventura, descanso, familia, crecimiento, servicios, jovenes, trayectoria, habitación, pileta, casa, patio cervecero, terraza, mirador, turismo, turista, atención, comodidad, estacionamiento, gimnasio, reservas, disponibilidad">
+    <link rel="icon" type="favicon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css"> 
 </head>
 <body>
     <!-- Navbar -->
@@ -60,7 +62,7 @@
                 <h1 class="title">Acerca de <span>Nosotros</span></h1>
                 <!-- Ends Title -->
                 <!-- Recuadro Principal -->
-                <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight">
+                <div class=" container col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight">
                     <h2 class="pt-1 mt-1 cardTitle">Estamos Pensando en tu Esparcimiento</h2>
                     <div class="container-fluid col-md-11">
                     <!-- Carousel Acerca de Nosotros -->
@@ -108,9 +110,9 @@
         </section>
         <!-- Ends Secrtion Data -->
         <!-- Ends Info -->
-        <h2>Precios</h2>
+        <h2 class="cardTitle wow animate__animated animate__fadeInUp">Precios</h2>
         <!-- Price Table -->
-        <table class="table price mx-auto">
+        <table class="table price mx-auto wow animate__animated animate__fadeInUp">
             <thead>
                 <tr>
                     <th scope="col">Habitación</th>
@@ -135,7 +137,7 @@
             </tbody>
         </table>
         <!-- Availability Form -->
-        <div class="availForm py-2 mb-3">
+        <div class="availForm py-2 mb-3 wow animate__animated animate__fadeInUp">
             <!-- se muestra la etiqueta como form acción a los fines de simular funcionamiento -->
             <form action="reservascon.html">
                 <!-- Form Content -->  
@@ -211,7 +213,7 @@
     </main>
 <!-- Aside -->
 <aside id="interest">
-    <div class="asideGrid">
+    <div class="asideGrid wow animate__animated animate__fadeInUp">
             <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
         <div id="trip" class="asideFigures">
             <figure>
@@ -235,7 +237,7 @@
 <!-- End Aside -->
 <!-- Footer -->
 <footer id="footer">
-    <div class="footerFlex">
+    <div class="footerFlex wow animate__animated animate__fadeInUp">
         <div class="pDiv">
             <p>Seguinos en nuestras redes sociales:</p>
         </div>
@@ -249,5 +251,10 @@
 <!-- End Footer -->
 <!-- Scrtipt js bootsrap -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- WOW -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

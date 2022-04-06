@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon" href="icons/favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <title>Hotel Los Toneles - Cafayate Salta Argentina - ¡Por favor realiza tu reserva!</title>
     <meta name="description" content= "Completa el formulario y comienza a disfrutar de tu próximo descanso">
     <meta name="keywords" content="hotel, cafayate, reservas, disponibilidad, habitación,">
+    <link rel="icon" type="favicon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css"> 
 </head>
 <body>
     <!-- Navbar -->
@@ -51,10 +53,10 @@
     </nav>
     <!-- Ends Navbar -->
     <!-- Main Contet -->
-    <main class="w-100 mx-0 px-0">
+    <main class="w-100 mx-0 px-0 wow animate__animated animate__fadeInUp">
         <h1 class="title">Reservas</h1>
         <div class="ups">
-            <p class="sentir">¡UPS!. No hay habitaciones disponibles para las fechas seleccionadas</p>
+            <p class="sentir">¡Lo sentimos!, no hay habitaciones disponibles para las fechas seleccionadas</p>
             <p class="reintenta">Por favor, seleccione otra fecha</p>
         </div>
         <article>
@@ -136,7 +138,7 @@
             </div>
             <!-- Ends Availability Form -->
             </div>
-        <div class="tableDiv">
+        <div class="tableDiv wow animate__animated animate__fadeInUp">
             <h2 class="cardTitle">Precios</h2>
             <!-- Price Table -->
             <table class="table price mx-auto">
@@ -167,7 +169,7 @@
     </main>
 <!-- Aside -->
 <aside id="interest">
-    <div class="asideGrid">
+    <div class="asideGrid wow animate__animated animate__fadeInUp">
             <h3 class="asideTitle" id="asideTitle">Tambien nos podes encontrar en: </h3>
         <div id="trip" class="asideFigures">
             <figure>
@@ -191,7 +193,7 @@
 <!-- End Aside -->
 <!-- Footer -->
 <footer id="footer">
-    <div class="footerFlex">
+    <div class="footerFlex wow animate__animated animate__fadeInUp">
         <div class="pDiv">
             <p>Seguinos en nuestras redes sociales:</p>
         </div>
@@ -205,5 +207,10 @@
 <!-- End Footer -->
 <!-- Scrtipt js bootsrap -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- WOW -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>
