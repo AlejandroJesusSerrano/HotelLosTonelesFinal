@@ -12,9 +12,9 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.min.css">    
 </head>
-<body>
+<body class="text-center">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navColor w-100">
+    <nav class="navbar navbar-expand-xl navbar-dark navColor w-100 wow animate__animated animate__fadeInDown">
         <div class="navContainer container-fluid">
             <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo Hotel Los Toneles"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
     </nav>
     <!-- Ends Navbar -->
     <!-- Main Contet -->
-    <main>
+    <main class="mx-auto">
         <!-- Carousel -->
         <div id="indexCarousel" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -77,7 +77,7 @@
         </div>
         <!-- Ends Carousel -->
         <!-- Availability Form -->
-        <div class="availForm py-2 wow animate__animated animate__fadeInUp">
+        <div id="availForm" class="availForm py-2 wow animate__animated animate__fadeInUp">
             <!-- se muestra la etiqueta como form acción a los fines de simular funcionamiento -->
             <form action="reservascon.html">
                 <!-- Form Content -->  
@@ -141,7 +141,7 @@
                         </div>
                         <!-- la función del boton sera, segun haya o no disponibilidad, llevar al usuario a una opcion en la que pueda reservar o a otra en la que informe que no hay reservas para la fecha seleccionada y que modifique su decisión -->
                         <div class="m-0 p-0 col-xl-4 col-xs-12 btn ">
-                            <button type="submit" class="button reserve">
+                            <button type="submit" class="button btnDark">
                                 <span>¡Verifica la Disponibilidad!</span>
                             </button>
                         </div>
@@ -153,29 +153,30 @@
         <!--Section Data  -->
         <section class="py-3">
             <!-- Contaioner -->
-            <div class="container-fluid wow animate__animated animate__fadeInUp ">
+            <div class="contentDiv container-fluid wow animate__animated animate__fadeInUp">
                 <!-- Title -->
                 <h1 class="title">Relájate y <span>Disfruta</span></h1>
                 <!-- Ends Title -->
-                <div class="container-fluid row infoContainer">
+            </div>
+                <div class="container-fluid row infoContainer mx-auto px-auto">
                     <!-- First Sub-Section --> 
                     <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight wow animate__animated animate__fadeInUp">
                         <h2 class="pt-1 mt-1 cardTitle" >Nuestros Servicios</h2>
-                        <div class="container-fluid col-md-3 col-lg-4">
+                        <div class="container-fluid col-lg-6 col-xl-8">
                             <figure>
                                 <img src="img/patio cervecero.jpg" alt="Patio Cervecero Hotel Los Toneles">
                                 <figcaption class="pt-1">Patio Cerevecero - Hotel Los Toneles Cafayate</figcaption>
                             </figure>
                         </div>
-                        <div class="container-fluid col-lg-3 col-xl-4">
+                        <div class="container-fluid col-lg-6 col-xl-4">
                             <p class="paragraph">
-                                Bienvenido al sitio del Hotel Los Toneles, hubicados en cafayate a 30 mts. de la plaza central, brindamos comodidad y hospitalidad para que te relajes y disfrutes de unas dias de total esparcimiento, tenemos a tu disposición los siguientes servicios: desayuno, pileta, parrilla, patio de juegos para niños, patio cervecero, gimnasio, estacionamiento y mucho más. 
+                                Bienvenido al sitio del Hotel Los Toneles, hubicado en Cafayate a 30 mts. de la plaza central, brindamos comodidad y hospitalidad para que te relajes y disfrutes de unas dias de total esparcimiento, tenemos a tu disposición los siguientes servicios: desayuno, pileta, parrilla, patio de juegos para niños, patio cervecero, gimnasio, estacionamiento y mucho más. 
                             </p> 
                             <p class="paragraph">
                                 Ofreciendote lugares cómodos para relajarte y disfrutar de todo lo que te ofrece Cafayate, desde turismo aventura a recorridos por bodegas, viñedos y cata de vinos de altura, sabiendo que en esta tierra crece un excelente malbec y el más premiado y apreciado torrentes.
                             </p>
                         </div>
-                        <div class="container-fluid row col-md-6 col-lg-4">
+                        <div class="divIcons container-fluid mt-5 mx-auto px-auto row text-center col-lg-12 col-xl-12">
                             <img src="icons/beeryardicon.svg" alt="Patio Cervecero" class="icons">
                             <img src="icons/gymicon.svg" alt="Gimnasio" class="icons">
                             <img src="icons/poolicon.svg" alt="Pileta" class="icons">
@@ -190,140 +191,139 @@
                     <!-- Second Sub-Section Superior Room -->
                     <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionDark wow animate__animated animate__fadeInUp">
                         <h2 class="pt-1 mt-1 cardTitleLight">Habitación Superior</h2>
-                        <div class="container-fluid col-md-3 col-lg-4">
+                        <div class="container-fluid col-md-6 col-xl-8">
                             <figure>
                                 <img src="img/habitacionsup.jpg" alt="Habitación Superior Hotel Los Toneles - Cafayate">
                                 <figcaption class="pt-1">Habitación Superior - Hotel Los Toneles Cafayate</figcaption>
                             </figure>
                         </div>
-                        <div class="container-fluid col-md-3 col-lg-4">
+                        <div class="container-fluid col-md-6 col-xl-4">
                             <p class="paragraph">
                                 La Habitación superior de nuestro Hotel, te ofrece gran comodidad, de 40 mts. cuadrados, dispone de Sommier King Size, mesa y sillas, caja de seguridad, baño privado con ducha de agua caliente, aire acondicionado frio calor y Tv por cable.
                             </p>
-                        </div>
-                        <div class="container-fluid row col-md-6 col-lg-4">
-                            <img src="icons/tviconLIght.svg" alt="T.V. por Cable" class="icons">
-                            <img src="icons/airiconLight.svg" alt="Aie Acondicionado"  class="icons">
-                            <img src="icons/safeiconLight.svg" alt="Caja de Seguridad" class="icons">
-                            <img src="icons/tableiconLight.svg" alt="Mesa en el cuarto"  class="icons">
-                            <img src="icons/chairiconLight.svg" alt="Sillas en el cuarto" class="icons">
-                            <img src="icons/showericonLIght.svg" alt="Ducha de Agua Caliente y Fria - Privada" class="icons">
-                            <img src="icons/toileticonLIght.svg" alt="Baño Privado" class="icons">
-                            <div class="gridCenterFlex">
-                                <!-- Container Buttons -->
-                                <div class="buttons pt-5">
-                                    <!-- Se utilizan botones por que se espera una accion sumado al enlace -->
-                                    <form action="#availForm">
-                                        <button class="button reserve">
-                                            <span>Reserva</span>
-                                        </button>
-                                    </form>
-                                    <form action="Instalaciones.html">
-                                        <button class="button">
-                                            <span>Habitación</span>
-                                        </button>
-                                    </form>
-                                <!-- finaliza sector abarcad por comentario previo -->
-                                </div>
-                            <!-- End Container Buttons -->
+                            <div class="divIcons container-fluid mt-5 mx-auto px-auto row text-center col-lg-12 col-xl-4">
+                                <img src="icons/tviconLIght.svg" alt="T.V. por Cable" class="icons">
+                                <img src="icons/airiconLight.svg" alt="Aie Acondicionado"  class="icons">
+                                <img src="icons/safeiconLight.svg" alt="Caja de Seguridad" class="icons">
+                                <img src="icons/tableiconLight.svg" alt="Mesa en el cuarto"  class="icons">
+                                <img src="icons/chairiconLight.svg" alt="Sillas en el cuarto" class="icons">
+                                <img src="icons/showericonLIght.svg" alt="Ducha de Agua Caliente y Fria - Privada" class="icons">
+                                <img src="icons/toileticonLIght.svg" alt="Baño Privado" class="icons">
                             </div>
-                            <!-- Ends Div center-->
                         </div>
+                        <div>
+                            <!-- Container Buttons -->
+                            <div class="buttons mx-auto px-auto pt-5">
+                                <!-- Se utilizan botones por que se espera una accion sumado al enlace -->
+                                <form action="#availForm">
+                                    <button class="button btnDark">
+                                        <span>Reserva</span>
+                                    </button>
+                                </form>
+                                <!-- lleva a instalaciones a modo de prueba -->
+                                <form action="Instalaciones.html">
+                                    <button class="button btnDark">
+                                        <span>Habitación</span>
+                                    </button>
+                                </form>
+                            <!-- finaliza sector abarcad por comentario previo -->
+                            </div>
+                        <!-- End Container Buttons -->
+                        </div>
+                        <!-- Ends Div center-->
                     </div>
                     <!-- Ends Second Subsection -->
                     <!-- Third Sub-section Standar Room -->
                     <div class="col-md-12 col-lg-12 pb-3 mx-auto my-3 row impressionLight wow animate__animated animate__fadeInUp">
                         <h2 class="pt-1 mt-1 cardTitle">Habitación Estándard</h2>
-                        <div class="container-fluid col-md-3 col-lg-4">
+                        <div class="container-fluid col-md-6 col-xl-8">
                             <figure>
                                 <img src="img/habitacionsta.jpg" alt="Patio Cervecero Hotel Los Toneles">
                                 <figcaption class="pt-1">Habitación Estándard - Hotel Los Toneles Cafayate</figcaption>
                             </figure>
                         </div>
-                        <div class="container-fluid col-md-3 col-lg-4">
+                        <div class="container-fluid col-md-6 col-xl-4">
                             <p class="paragraph">
                                 Nuestra habitación estándard de 28 mts. cuadrados ofrece, cama de dos plazas, baño privado con ducha de agua caliente, Aire Acondicionado frio/calor, tv por cable, y salida a un patio privado con mesas y sillas.
                             </p>
-                        </div>
-                        <div class="container-fluid row col-md-6 col-lg-4">
-                            <img src="icons/tvicon.svg" alt="T.V. por Cable" class="icons">
-                            <img src="icons/airicon.svg" alt="Aie Acondicionado"  class="icons">
-                            <img src="icons/showericon.svg" alt="Ducha de Agua Caliente y Fria - Privada" class="icons">
-                            <img src="icons/toileticon.svg" alt="Baño Privado" class="icons">
-                            <div class="gridCenterFlex">
-                                <!-- Container Buttons -->
-                                <div class="buttons pt-5">
-                                    <!-- Se utilizan botones por que se espera una accion sumado al enlace -->
-                                    <form action="#availForm">
-                                        <button class="button reserve">
-                                            <span>Reserva</span>
-                                        </button>
-                                    </form>
-                                    <form action="Instalaciones.html">
-                                        <button class="button">
-                                            <span>Habitación</span>
-                                        </button>
-                                    </form>
-                                <!-- finaliza sector abarcad por comentario previo -->
-                                </div>
-                            <!-- End Container Buttons -->
+                            <div class="divIcons container-fluid mx-auto px-auto row text-center col-lg-12 col-xl-4">
+                                <img src="icons/tvicon.svg" alt="T.V. por Cable" class="icons">
+                                <img src="icons/airicon.svg" alt="Aie Acondicionado"  class="icons">
+                                <img src="icons/showericon.svg" alt="Ducha de Agua Caliente y Fria - Privada" class="icons">
+                                <img src="icons/toileticon.svg" alt="Baño Privado" class="icons">
                             </div>
-                            <!-- Ends Div center-->
+                        </div>
+                        <div class="divIcons container-fluid mx-auto px-auto row text-center col-lg-12 col-xl-4">
+                            <!-- Container Buttons -->
+                            <div class="buttons pt-5">
+                                <!-- Se utilizan botones por que se espera una accion sumado al enlace -->
+                                <form action="#availForm">
+                                    <button class="button btnDark">
+                                        <span>Reserva</span>
+                                    </button>
+                                </form>
+                                <form action="Instalaciones.html">
+                                    <button class="button btnDark">
+                                        <span>Habitación</span>
+                                    </button>
+                                </form>
+                            <!-- finaliza sector abarcad por comentario previo -->
+                            </div>
+                            <!-- End Container Buttons -->
                         </div>
                     </div>
                     <!-- Ends Third Sub-section -->
-
+                    <!-- Ends Container -->
                 </div>
             </div>
-            <!-- Ends Container -->
         </section>
         <!-- Ends Secrtion Data -->
         <!-- Ends Info -->
     </main>
-<!-- Aside -->
-<aside>
-    <div class="asideGrid wow animate__animated animate__fadeInUp">
-        <h3 class="asideTitle" id="asideTitle">También nos podes encontrar en: </h3>
-        <div id="trip" class="asideFigures">
-            <figure>
-                <a href="https://www.tripadvisor.com.ar/Hotel_Review-g317027-d3200726-Reviews-Los_Toneles-Cafayate_Province_of_Salta_Northern_Argentina.html" target="blank"><img src="icons/tripicon.svg" alt="Ícono y enláce a Trip Advisor" class="asideIcon"></a>
-                <figcaption class="asideFigCap">Trip Advisor</figcaption>
-            </figure>
+    <!-- Aside -->
+    <aside>
+        <div class="w-100 asideGrid wow animate__animated animate__fadeInUp">
+            <h3 class="asideTitle" id="asideTitle">También nos podes encontrar en: </h3>
+            <div id="trip" class="asideFigures">
+                <figure>
+                    <a href="https://www.tripadvisor.com.ar/Hotel_Review-g317027-d3200726-Reviews-Los_Toneles-Cafayate_Province_of_Salta_Northern_Argentina.html" target="blank"><img src="icons/tripicon.svg" alt="Ícono y enláce a Trip Advisor" class="asideIcon"></a>
+                    <figcaption class="asideFigCap">Trip Advisor</figcaption>
+                </figure>
+            </div>
+            <div id="booking" class="asideFigures">
+                    <a href="https://www.booking.com/hotel/ar/cafayate-los-toneles.es.html" target="blank"><img src="icons/booking.svg" alt="Ícono y enláce a Booking" class="asideIcon"></a>
+                    <figcaption class="asideFigCap">Booking</figcaption>
+                </figure>
+            </div>
+            <div class="asideFigures" id="cafayate">
+                <figure>
+                    <a href="https://www.facebook.com/SECTURCAFAYATE/" target="blank"><img src="icons/turismocafayate.svg" alt="Imagen: Turismo Cafayate" class="asideIconTur"></a>
+                    <figcaption class="asideFigCap">Actividades</figcaption>
+                </figure>
+            </div>
         </div>
-        <div id="booking" class="asideFigures">
-                <a href="https://www.booking.com/hotel/ar/cafayate-los-toneles.es.html" target="blank"><img src="icons/booking.svg" alt="Ícono y enláce a Booking" class="asideIcon"></a>
-                <figcaption class="asideFigCap">Booking</figcaption>
-            </figure>
+    </aside>
+    <!-- End Aside -->
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footerFlex w-100 wow animate__animated animate__fadeInUp">
+            <div class="pDiv">
+                <p>Seguinos en nuestras redes sociales:</p>
+            </div>
+            <div class="iconDiv">
+                <a href="https://www.facebook.com/" target="blank" class="footerIcon"><img src="icons/facebookLight.svg" alt="Facebook" class="iconFooter"></a>
+                <a href="https://www.instagram.com/" target="blank" class="footerIcon"><img src="icons/instagramLIght.svg" alt="Instagram" class="iconFooter"></a>
+                <a href="https://twitter.com/" target="blank" class="footerIcon"><img src="icons/twitterLight.svg" alt="Twitter"class="iconFooter"></a>
+            </div>  
         </div>
-        <div class="asideFigures" id="cafayate">
-            <figure>
-                <a href="https://www.facebook.com/SECTURCAFAYATE/" target="blank"><img src="icons/turismocafayate.svg" alt="Imagen: Turismo Cafayate" class="asideIconTur"></a>
-                <figcaption class="asideFigCap">Actividades</figcaption>
-            </figure>
-        </div>
-    </div>
-</aside>
-<!-- End Aside -->
-<!-- Footer -->
-<footer id="footer">
-    <div class="footerFlex w-100 wow animate__animated animate__fadeInUp">
-        <div class="pDiv">
-            <p>Seguinos en nuestras redes sociales:</p>
-        </div>
-        <div class="iconDiv">
-            <a href="https://www.facebook.com/" target="blank" class="footerIcon"><img src="icons/facebookLight.svg" alt="Facebook" class="iconFooter"></a>
-            <a href="https://www.instagram.com/" target="blank" class="footerIcon"><img src="icons/instagramLIght.svg" alt="Instagram" class="iconFooter"></a>
-            <a href="https://twitter.com/" target="blank" class="footerIcon"><img src="icons/twitterLight.svg" alt="Twitter"class="iconFooter"></a>
-        </div>  
-    </div>
-</footer>
-<!-- End Footer -->
-<!-- Scrtipt js bootsrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- WOW script -->
-<script src="js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
+    </footer>
+    <!-- End Footer -->
+    <!-- Scrtipt js bootsrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- WOW script -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

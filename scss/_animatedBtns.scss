@@ -15,6 +15,9 @@
     align-items: center;
     justify-items: space-between;
     box-sizing: border-box;
+    @media screen and(max-width: 480px){
+        grid-template-columns: 1fr;
+    }
 }
 
 .buttonsCol{
@@ -32,49 +35,43 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height:6rem;
-    background:map-get($map:$colorSchema,$key:'main');
-    color:map-get($map:$colorSchema,$key:'secondLight');
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
+    height: 80px;
+    background: map-get($map: $colorSchema , $key:'mainLight' );
+    color: map-get($map: $colorSchema, $key:'main' );
+    font-size: map-get($map: $fontSz, $key:'sm' );
     border: none;
+    border-radius: .5em;
     cursor: pointer;
     text-transform: uppercase;
     transition: .3s ease all;
-    border-radius: .2em;
-    margin:0 .5em;
     position: relative;
     overflow: hidden;
-    box-sizing: border-box;
+    &:hover{
+        color: map-get($map: $colorSchema, $key:'mainLight' );
+    }
+    span{
+        position: relative;
+        z-index: 2;
+        transition: .3s ease all;
+        font-family: $fontTitle;
+    }
+}
+
+.btnDark{
     &:after{
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: map-get($map:$colorSchema,$key:'btnAnimColor');
-        position: absolute;
-        z-index: 1;
-        top: -6em;
-        left: 0;
-        transition: .3s ease-in-out all;
-        box-sizing: border-box;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: map-get($map: $colorSchema, $key:'main' );
+    position:absolute;
+    z-index: 1;
+    top: -80px;
+    left:0;
+    transition:.3s ease-in-out all;
     }
-    &:hover:after{
-        top:0;
+    &:hover{
+        &:after{
+            top: 0;
+        }
     }
-}
-
-.button span{
-    position: relative;
-    z-index: 2;
-    transition: .3s ease all;
-}
-
-.reserve{
-    background:map-get($map:$colorSchema,$key:'mainLight');
-    color:map-get($map:$colorSchema,$key:'main');
-}
-
-.reserve:after{
-    background-color: map-get($map:$colorSchema,$key:'btnAnimColor');
 }

@@ -1,26 +1,14 @@
-// variables
-
 // colorMap
 $colorSchema:(
     'main': #210606, 
     'mainLight':#d7ccc8,
     'mainLightAlpha':rgba(215,204,200, .7),
     'second':#402525,
-    'secondLight': #f2f2f2,
+    'secondLight':#f2f2f2,
     'deco': #5d4037,
-    'nav': rgba(64, 37, 37,.7),
-    'btnAnim' :#e8d0b3,);
-
-
-//sizing
-$w100:100vw;
-$h100:100vh;
-$w75:75vw;
-$h75:75vh;
-$w50:50vw;
-$h50:50vh;
-$w25:25vw;
-$h25:25vh;
+    'nav': rgba(64, 37, 37,.8),
+    'btnAnim' :#e8d0b3,
+);
 
 body{
     background-image:url(../img/background.jpg)

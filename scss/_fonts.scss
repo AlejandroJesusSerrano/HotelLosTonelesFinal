@@ -3,13 +3,26 @@
 $fontMain:'Quicksand', sans-serif;
 $fontTitle: 'Cinzel Decorative', cursive;
 
-//variables para textos
+//Texts Map
+$fontSz:(
+    'xxxl':10em, 
+    'xxl':8em,
+    'xl':6em,
+    'lg':4em,
+    'nor':3em,
+    'cardsp':2.5em,
+    'sm':2em,
+    'xs':1.5em,
+    'xxs':1em,
+    'xxxs':0.5em,
+);
+
 $textXXL: 10em;
 $textXL: 6em;
 $textLg: 4em;
 $texth3: 3em;
-$textNav: 2em;
-$textNl: 1.5em;
+$textNav: 1.5em;
+$textNl: 2em;
 
 
 

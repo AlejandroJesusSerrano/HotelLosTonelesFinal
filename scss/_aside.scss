@@ -2,7 +2,7 @@
 
 aside{
     width: 100%;
-    padding: 1.5em;
+    padding:auto;
     box-sizing: border-box;
     text-align: center;
     .asideGrid{
@@ -18,9 +18,12 @@ aside{
         #asideTitle{
             grid-area: asideTitle;
             font-family: $fontTitle;
-            font-size: $texth3;
+            font-size: map-get($map:$fontSz,$key:'nor');
             color: map-get($map:$colorSchema,$key:'main');
             text-align: center;
+            @media only screen and (max-width: 660px){
+                font-size: map-get($map:$fontSz,$key:'xs');
+            }
         }
         #trip{
             grid-area: trip;
@@ -41,16 +44,32 @@ aside{
 }
 
 .asideFigCap{
-    font-size: 2em;
+    font-size: map-get($map:$fontSz,$key:'sm');
     color: map-get($map:$colorSchema,$key:'main');
+    @media only screen and (max-width: 720px){
+        font-size: map-get($map:$fontSz,$key:'xxs');
+    }
+
 }
 
 .asideIcon{
     width: 6em;
     box-sizing: border-box;
+    @media only screen and (max-width: 720px){
+        width: 4em;
+    }
+    @media only screen and (max-width: 314px){
+        width: 3em;
+    }
 }
 
 .asideIconTur{
     width: 11em;
     box-sizing: border-box;
+    @media only screen and (max-width: 720px){
+        width: 7em;
+    }
+    @media only screen and (max-width: 314px){
+        width: 5em;
+    }
 }

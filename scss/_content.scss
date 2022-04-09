@@ -1,20 +1,54 @@
 .title{
-    @include titles($fontTitle, $textXL, 1.5em, map-get($map:$colorSchema,$key:'main'));
-
+    @include titles($fontTitle, map-get($map:$fontSz,$key:'xxl'), 1.5em, map-get($map:$colorSchema,$key:'main'));
     span{
-        font-family:$fontTitle;
-        color:map-get($map:$colorSchema,$key:'deco');
+        font-family: $fontTitle;
+        color: map-get($map: $colorSchema, $key:'deco' )
+    }  
+    @media only screen and (max-width: 1280px){
+        font-size: map-get($map:$fontSz,$key:'xl');
     }
+    @media only screen and (max-width: 960px){
+        font-size: map-get($map:$fontSz,$key:'lg');
+    }
+    @media only screen and (max-width: 360px){
+        font-size: map-get($map:$fontSz,$key:'nor');
+    }      
 }
+
+
+.title404{
+    @extend .title;
+    font-family: $fontMain;        
+}
+
 
 .titleBig{
     @extend .title;
-    font-size: $textXXL
+    font-size: map-get($map:$fontSz,$key:'xxxl');
+    @media only screen and (max-width: 1280px){
+        font-size: map-get($map:$fontSz,$key:'xxl');
+    }
+    @media only screen and (max-width: 720px){
+        font-size: map-get($map:$fontSz,$key:'xl');
+    }
 }
 
 .subtitle{
     @extend .title;
-    font-size: $textLg;
+    font-size: map-get($map:$fontSz,$key:'xl');
+    @media only screen and (max-width: 1280px){
+        font-size: map-get($map:$fontSz,$key:'lg');
+    }
+    @media only screen and (max-width: 960px){
+        font-size: map-get($map:$fontSz,$key:'nor');
+    }
+    @media only screen and (max-width: 360px){
+        font-size: map-get($map:$fontSz,$key:'sm');
+    }
+}
+.subtitle404{
+    @extend .subtitle;
+    font-family: $fontMain;
 }
 
 .infoContainer{
@@ -27,6 +61,7 @@
     align-items: center;
     background-color:map-get($map:$colorSchema,$key:'secondLight');
     justify-items: center;
+    border-radius: 2em;
 }
 
 .impressionDark {
@@ -34,15 +69,20 @@
     align-items: center;
     background-color:map-get($map:$colorSchema,$key:'deco');
     justify-items: center;
+    border-radius: 2em;
 }
 
     .container-fluid .paragraph{
-        font-size: 2em;
+        font-size: map-get($map:$fontSz,$key:'sm');
         color: map-get($map:$colorSchema,$key:'second');
+        @media only screen and (max-width: 960px){
+            font-size: map-get($map:$fontSz,$key:'xs');
+        }
     }
 
     .container-fluid img{
         width: 100%;
+        border-radius: 1em;
     }
 
     .container-fluid figcaption{
@@ -52,9 +92,32 @@
         font-style:italic;
     }
 
+    .divIcons{
+        width: 100%;
+        padding:auto;
+        margin: auto;
+        @include flex (center, center);
+    }
+
     div .icons{
-        width: 10em;
+        width: 6em;
         background: none;
+        display: inline;
+        @media only screen and (max-width: 1440px){
+            width: 5em;
+        }
+        @media only screen and (max-width: 1230px){
+            width: 4.5em;
+        }
+        @media only screen and (max-width: 498px){
+            width: 4em;
+        }
+        @media only screen and (max-width: 370px){
+            width: 3em;
+        }
+        @media only screen and (max-width: 281px){
+            width: 2.5em;
+        }
 }
 
     .impressionDark h2 {
@@ -62,17 +125,29 @@
     }
 
         .impressionDark .container-fluid figcaption {
-            color: map-get($map:$colorSchema,$key:'main');
+            color: map-get($map:$colorSchema,$key:'mainLight');
         }
 
         .impressionDark .container-fluid .paragraph{
-            font-size: 2em;
+            font-size: map-get($map:$fontSz,$key:'sm');
             color: map-get($map:$colorSchema,$key:'mainLight');
+            @media only screen and (max-width: 960px){
+                font-size: map-get($map:$fontSz,$key:'xs');
+            }
         }
 
 .cardTitle{
     @extend .title;
-    font-size:$textLg;
+    font-size: map-get($map:$fontSz,$key:'xl');
+    @media only screen and (max-width: 1280px){
+        font-size: map-get($map:$fontSz,$key:'lg');
+    }
+    @media only screen and (max-width: 960px){
+        font-size: map-get($map:$fontSz,$key:'nor');
+    }
+    @media only screen and (max-width: 360px){
+        font-size: map-get($map:$fontSz,$key:'cardsp');
+    }
 }
 
 .cardTitleLight{
@@ -84,6 +159,16 @@
     }
 }
 
+.instInfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+        @media only screen and (max-width: 767px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .ups{
     background-color: map-get($map:$colorSchema,$key:'main');
     color: map-get($map:$colorSchema,$key:'mainLight');
@@ -92,24 +177,19 @@
 
 
     .sentir{
-        font-size: $textLg;
-        font-family:  $fontTitle;
+        font-size: map-get($map:$fontSz,$key:'lg');
+        font-family:  $fontMain;
+        @media only screen and (max-width: 960px){
+            font-size: map-get($map:$fontSz,$key:'nor');
+        }
     }
 
     .reintenta{
-        font-size: $textNl;
+        font-size: map-get($map:$fontSz,$key:'sm');
     }
 }
 
 .tableDiv{
     background-color: none;
     margin-top: 3em;
-}
-
-.err404{
-    @include backDiv (url(../img/404.png), no-repeat, center);
-}
-
-.err404Alpha{
-    background-color: map-get($map:$colorSchema,$key:'mainLightAlpha');
 }

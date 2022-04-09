@@ -7831,7 +7831,7 @@ body {
   margin: 0;
   padding: 1em; }
   .availForm label, .contactForm label {
-    font-size: 1.5em; }
+    font-size: 2em; }
 
 .availForm input[type="date"], .contactForm input[type="date"],
 .availForm select,
@@ -7971,6 +7971,9 @@ input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicat
   align-items: center;
   justify-items: space-between;
   box-sizing: border-box; }
+  @media screen and (max-width: 480px) {
+    .buttons {
+      grid-template-columns: 1fr; } }
 
 .buttonsCol {
   width: 90%;
@@ -7986,81 +7989,113 @@ input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicat
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 6rem;
-  background: #210606;
-  color: #f2f2f2;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
+  height: 80px;
+  background: #d7ccc8;
+  color: #210606;
+  font-size: 2em;
   border: none;
+  border-radius: .5em;
   cursor: pointer;
   text-transform: uppercase;
   transition: .3s ease all;
-  border-radius: .2em;
-  margin: 0 .5em;
   position: relative;
-  overflow: hidden;
-  box-sizing: border-box; }
-  .button:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: -6em;
-    left: 0;
-    transition: .3s ease-in-out all;
-    box-sizing: border-box; }
-  .button:hover:after {
-    top: 0; }
+  overflow: hidden; }
+  .button:hover {
+    color: #d7ccc8; }
+  .button span {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+    font-family: "Cinzel Decorative", cursive; }
 
-.button span {
-  position: relative;
-  z-index: 2;
-  transition: .3s ease all; }
+.btnDark:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #210606;
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 0;
+  transition: .3s ease-in-out all; }
 
-.reserve {
-  background: #d7ccc8;
-  color: #210606; }
+.btnDark:hover:after {
+  top: 0; }
 
 .navColor {
-  background-color: rgba(64, 37, 37, 0.7);
+  background-color: rgba(64, 37, 37, 0.8);
   padding: 5px 30px;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .navColor .logo {
     width: 30em; }
+    @media only screen and (max-width: 1280px) {
+      .navColor .logo {
+        width: 20em; } }
+    @media only screen and (max-width: 320px) {
+      .navColor .logo {
+        width: 10em; } }
   .navColor ul {
     display: flex; }
     .navColor ul li {
       list-style: none; }
       .navColor ul li a {
-        font-size: 2em;
+        font-size: 1.5em;
         text-decoration: none; }
         .navColor ul li a:hover {
           color: #f2f2f2;
           text-decoration: underline; }
 
-.title, .titleBig, .subtitle, .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
+.title, .title404, .titleBig, .subtitle, .subtitle404, .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
   font-family: "Cinzel Decorative", cursive;
-  font-size: 6em;
+  font-size: 8em;
   line-height: 1.5em;
   color: #210606;
   padding: 2px;
   text-align: center; }
-  .title span, .titleBig span, .subtitle span, .cardTitle span, .contactInfo h4 span, .contactInfo .h4 span, .cardTitleLight span {
+  .title span, .title404 span, .titleBig span, .subtitle span, .subtitle404 span, .cardTitle span, .contactInfo h4 span, .contactInfo .h4 span, .cardTitleLight span {
     font-family: "Cinzel Decorative", cursive;
     color: #5d4037; }
+  @media only screen and (max-width: 1280px) {
+    .title, .title404, .titleBig, .subtitle, .subtitle404, .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
+      font-size: 6em; } }
+  @media only screen and (max-width: 960px) {
+    .title, .title404, .titleBig, .subtitle, .subtitle404, .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
+      font-size: 4em; } }
+  @media only screen and (max-width: 360px) {
+    .title, .title404, .titleBig, .subtitle, .subtitle404, .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
+      font-size: 3em; } }
+
+.title404 {
+  font-family: "Quicksand", sans-serif; }
 
 .titleBig {
   font-size: 10em; }
+  @media only screen and (max-width: 1280px) {
+    .titleBig {
+      font-size: 8em; } }
+  @media only screen and (max-width: 720px) {
+    .titleBig {
+      font-size: 6em; } }
 
-.subtitle {
-  font-size: 4em; }
+.subtitle, .subtitle404 {
+  font-size: 6em; }
+  @media only screen and (max-width: 1280px) {
+    .subtitle, .subtitle404 {
+      font-size: 4em; } }
+  @media only screen and (max-width: 960px) {
+    .subtitle, .subtitle404 {
+      font-size: 3em; } }
+  @media only screen and (max-width: 360px) {
+    .subtitle, .subtitle404 {
+      font-size: 2em; } }
+
+.subtitle404 {
+  font-family: "Quicksand", sans-serif; }
 
 .infoContainer {
   align-items: center;
@@ -8070,20 +8105,26 @@ input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicat
   width: 98vw;
   align-items: center;
   background-color: #f2f2f2;
-  justify-items: center; }
+  justify-items: center;
+  border-radius: 2em; }
 
 .impressionDark {
   width: 98vw;
   align-items: center;
   background-color: #5d4037;
-  justify-items: center; }
+  justify-items: center;
+  border-radius: 2em; }
 
 .container-fluid .paragraph, .container-sm .paragraph, .container-md .paragraph, .container-lg .paragraph, .container-xl .paragraph, .container-xxl .paragraph {
   font-size: 2em;
   color: #402525; }
+  @media only screen and (max-width: 960px) {
+    .container-fluid .paragraph, .container-sm .paragraph, .container-md .paragraph, .container-lg .paragraph, .container-xl .paragraph, .container-xxl .paragraph {
+      font-size: 1.5em; } }
 
 .container-fluid img, .container-sm img, .container-md img, .container-lg img, .container-xl img, .container-xxl img {
-  width: 100%; }
+  width: 100%;
+  border-radius: 1em; }
 
 .container-fluid figcaption, .container-sm figcaption, .container-md figcaption, .container-lg figcaption, .container-xl figcaption, .container-xxl figcaption {
   color: #402525;
@@ -8091,27 +8132,73 @@ input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicat
   text-decoration: overline;
   font-style: italic; }
 
+.divIcons {
+  width: 100%;
+  padding: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; }
+
 div .icons {
-  width: 10em;
-  background: none; }
+  width: 6em;
+  background: none;
+  display: inline; }
+  @media only screen and (max-width: 1440px) {
+    div .icons {
+      width: 5em; } }
+  @media only screen and (max-width: 1230px) {
+    div .icons {
+      width: 4.5em; } }
+  @media only screen and (max-width: 498px) {
+    div .icons {
+      width: 4em; } }
+  @media only screen and (max-width: 370px) {
+    div .icons {
+      width: 3em; } }
+  @media only screen and (max-width: 281px) {
+    div .icons {
+      width: 2.5em; } }
 
 .impressionDark h2, .impressionDark .h2 {
   color: #d7ccc8; }
 
 .impressionDark .container-fluid figcaption, .impressionDark .container-sm figcaption, .impressionDark .container-md figcaption, .impressionDark .container-lg figcaption, .impressionDark .container-xl figcaption, .impressionDark .container-xxl figcaption {
-  color: #210606; }
+  color: #d7ccc8; }
 
 .impressionDark .container-fluid .paragraph, .impressionDark .container-sm .paragraph, .impressionDark .container-md .paragraph, .impressionDark .container-lg .paragraph, .impressionDark .container-xl .paragraph, .impressionDark .container-xxl .paragraph {
   font-size: 2em;
   color: #d7ccc8; }
+  @media only screen and (max-width: 960px) {
+    .impressionDark .container-fluid .paragraph, .impressionDark .container-sm .paragraph, .impressionDark .container-md .paragraph, .impressionDark .container-lg .paragraph, .impressionDark .container-xl .paragraph, .impressionDark .container-xxl .paragraph {
+      font-size: 1.5em; } }
 
 .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
-  font-size: 4em; }
+  font-size: 6em; }
+  @media only screen and (max-width: 1280px) {
+    .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
+      font-size: 4em; } }
+  @media only screen and (max-width: 960px) {
+    .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
+      font-size: 3em; } }
+  @media only screen and (max-width: 360px) {
+    .cardTitle, .contactInfo h4, .contactInfo .h4, .cardTitleLight {
+      font-size: 2.5em; } }
 
 .cardTitleLight {
   color: #d7ccc8; }
   .cardTitleLight span {
     color: #f2f2f2; }
+
+.instInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 767px) {
+    .instInfo {
+      grid-template-columns: repeat(2, 1fr); } }
 
 .ups {
   background-color: #210606;
@@ -8120,31 +8207,32 @@ div .icons {
   text-align: center; }
   .ups .sentir {
     font-size: 4em;
-    font-family: "Cinzel Decorative", cursive; }
+    font-family: "Quicksand", sans-serif; }
+    @media only screen and (max-width: 960px) {
+      .ups .sentir {
+        font-size: 3em; } }
   .ups .reintenta {
-    font-size: 1.5em; }
+    font-size: 2em; }
 
 .tableDiv {
   background-color: none;
   margin-top: 3em; }
-
-.err404 {
-  background-image: url(../img/404.png);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.err404Alpha {
-  background-color: rgba(215, 204, 200, 0.7); }
 
 .table {
   font-family: "Quicksand", sans-serif;
   color: #210606;
   font-size: 2em;
   text-align: center; }
+  @media only screen and (max-width: 960px) {
+    .table {
+      font-size: 1.5em; } }
+  @media only screen and (max-width: 360px) {
+    .table {
+      font-size: 1em; } }
 
 aside {
   width: 100%;
-  padding: 1.5em;
+  padding: auto;
   box-sizing: border-box;
   text-align: center; }
   aside .asideGrid {
@@ -8162,6 +8250,9 @@ aside {
       font-size: 3em;
       color: #210606;
       text-align: center; }
+      @media only screen and (max-width: 660px) {
+        aside .asideGrid #asideTitle {
+          font-size: 1.5em; } }
     aside .asideGrid #trip {
       grid-area: trip; }
     aside .asideGrid #booking {
@@ -8177,14 +8268,29 @@ aside {
 .asideFigCap {
   font-size: 2em;
   color: #210606; }
+  @media only screen and (max-width: 720px) {
+    .asideFigCap {
+      font-size: 1em; } }
 
 .asideIcon {
   width: 6em;
   box-sizing: border-box; }
+  @media only screen and (max-width: 720px) {
+    .asideIcon {
+      width: 4em; } }
+  @media only screen and (max-width: 314px) {
+    .asideIcon {
+      width: 3em; } }
 
 .asideIconTur {
   width: 11em;
   box-sizing: border-box; }
+  @media only screen and (max-width: 720px) {
+    .asideIconTur {
+      width: 7em; } }
+  @media only screen and (max-width: 314px) {
+    .asideIconTur {
+      width: 5em; } }
 
 .footerFlex {
   display: flex;
@@ -8198,9 +8304,12 @@ aside {
     align-items: center;
     margin-right: 1em; }
     .footerFlex .pDiv p {
-      font-size: 2em;
+      font-size: 1.5em;
       color: #d7ccc8;
       margin-top: 1em; }
+      @media only screen and (max-width: 362px) {
+        .footerFlex .pDiv p {
+          font-size: 1em; } }
     .footerFlex .pDiv .iconDiv {
       display: flex;
       justify-content: space-between;
@@ -8212,6 +8321,9 @@ aside {
     display: inline-block;
     text-decoration: none;
     padding: 1em .5em 0 0;
-    width: 6em;
+    width: 4em;
     box-sizing: border-box;
     align-items: center; }
+    @media only screen and (max-width: 1280px) {
+      .footerIcon .iconFooter {
+        width: 3em; } }

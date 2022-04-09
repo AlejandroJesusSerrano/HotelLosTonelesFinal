@@ -1,6 +1,12 @@
 .table{
     font-family: $fontMain;
     color: map-get($map:$colorSchema,$key:'main');
-    font-size: 2em;
+    font-size: map-get($map:$fontSz,$key:'sm');
     text-align: center;
+    @media only screen and (max-width: 960px){
+        font-size: map-get($map:$fontSz,$key:'xs');
+    }
+    @media only screen and (max-width: 360px){
+        font-size: map-get($map:$fontSz,$key:'xxs');
+    }
 }
