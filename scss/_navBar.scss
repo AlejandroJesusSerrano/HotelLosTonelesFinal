@@ -23,7 +23,7 @@
         li{
             list-style: none;
             a{
-                font-size: map-get($map: $fontSz, $key:'xs' );
+                font-size: map-get($map: $fontSz, $key:'xxs' );
                 text-decoration: none;
                 &:hover{
                     color: map-get($map:$colorSchema,$key:'secondLight');
