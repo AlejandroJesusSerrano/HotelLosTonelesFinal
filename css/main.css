@@ -8044,7 +8044,7 @@ input[type="date"]::-webkit-inner-spin-button, ::-webkit-calendar-picker-indicat
     .navColor ul li {
       list-style: none; }
       .navColor ul li a {
-        font-size: 1em;
+        font-size: 1.5em;
         text-decoration: none; }
         .navColor ul li a:hover {
           color: #f2f2f2;
