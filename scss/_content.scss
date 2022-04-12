@@ -193,3 +193,20 @@
     background-color: none;
     margin-top: 3em;
 }
+
+
+.mapResponsive{
+    overflow:hidden;
+    padding-bottom:60%;
+    position:relative;
+    height:0;
+    display: flex;
+    justify-content: center;
+    .map-responsive iframe{
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
