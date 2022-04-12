@@ -2,4 +2,4 @@ node_modules/
 *.ai
 *.temp
 *.psd
-styles.css
+css/styles.css
