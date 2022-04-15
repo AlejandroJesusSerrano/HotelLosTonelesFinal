@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://lostonelescafayate.com/</title>
+  <link>http://lostonelescafayate.com/</link>
+
+<item>
+     <link>http://lostonelescafayate.com/</link>
+     <title>Hotel Los Toneles - Cafayate Salta Argentina - ¡Bienvenido a tu esparcimiento!</title>
+     <description>Un hotel pensado para que te distiendas y disfrutes al máximo de Cafayate, sintiendote como en tu casa</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://lostonelescafayate.com/index.html</link>
+     <title>Hotel Los Toneles - Cafayate Salta Argentina - ¡Bienvenido a tu esparcimiento!</title>
+     <description>Un hotel pensado para que te distiendas y disfrutes al máximo de Cafayate, sintiendote como en tu casa</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://lostonelescafayate.com/reservascon.html</link>
+     <title>Hotel Los Toneles - Cafayate Salta Argentina - ¡Por favor realiza tu reserva!</title>
+     <description>Completa el formulario y comienza a disfrutar de tu próximo descanso</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://lostonelescafayate.com/habitaciones.html</link>
+     <title>Hotel Los Toneles - ¡Conoce Nuestras Habitaciones!</title>
+     <description>Habitaciones pensadas en tu comodidad, tu confort, tu descanso y tu bolsillo</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://lostonelescafayate.com/instalaciones.html</link>
+     <title>Hotel Los Toneles - Cafayate - ¡Nuestras Instalaciones!</title>
+     <description>Conoce nuestras intalaciones, te ofrecemos pileta, terrazas con vistas panorámicas, juegos y mucho más.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://lostonelescafayate.com/cafayate.html</link>
+     <title>Hotel Los Toneles - ¡Descubre Cafayate en Salta Argentina!</title>
+     <description>Desde el Hotel Los Toneles queremos que conozcas nuestra cuna, un lugar mágico y hermoso cerca de maravillas muy especiales.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://lostonelescafayate.com/nosotros.html</link>
+     <title>Hotel Los Toneles - Cafayate - ¡Conócenos un poco!</title>
+     <description>Un hotel pensado para que te distiendas y disfrutes al máximo de Cafayate, sintiwendote como en tu casa</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://lostonelescafayate.com/contacto.html</link>
+     <title>Hotel Los Toneles - !Cantáctanos!</title>
+     <description>Contactanos para ayudarte a gestionar y resolver cualquier duda sobre tu estadía.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://lostonelescafayate.com/galeria.html</link>
+     <title>Hotel Los Toneles - Cafayate - !Galería de Imágenes!</title>
+     <description>Te mostraremos las mejores imágenes de nuestro pequeño gran Hotel, de Cafayate y sus cercanías.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
